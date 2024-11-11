@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <nav className="flex justify-around bg-white text-white- items-center py-2">
         <div>
-        <img className="rounded-2xl" src="/logo.png" width={160} height={100} alt="" />
+          <img className="rounded-2xl" src="/logo.png" width={160} height={100} alt="" />
         </div>
 
         <div>
@@ -91,7 +91,7 @@ export default function Home() {
 
       {/*  HOW IT WORKS end*/}
 
-      
+
 
       {/* about */}
       <div className=" top-32 relative">
@@ -101,10 +101,10 @@ export default function Home() {
             {/* <h2 className=" font-bold text-2xl">Lorem ipsum amet, consect consect</h2> */}
             <p className=" w-96">Insecurity has chased our rural farmers away from their farms, plunging the Insecurity has chased our rural farmers. plunging the Insecurity has chased our rural farmers</p>
             <ol className="list-disc px-10">
-                  <li >Framer</li>
-                  <li >Framer</li>
-                  <li >Framer</li>
-                  <li >Framer</li>
+              <li >Framer</li>
+              <li >Framer</li>
+              <li >Framer</li>
+              <li >Framer</li>
             </ol>
           </div>
           <div>
@@ -171,7 +171,7 @@ export default function Home() {
       {/* blog end */}
 
       <div className="flex justify-between items-center flex-wrap top-80 relative bg-white px-14 py-2  ">
-      <img className="rounded-2xl" src="/logo.png" width={160} height={100} alt="" />
+        <img className="rounded-2xl" src="/logo.png" width={160} height={100} alt="" />
         <div>
           <p>hello@gmail.com</p>
         </div>
