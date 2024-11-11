@@ -127,31 +127,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='w-64 bg-green-600 h-0.5 mx-8 '></div>
-      {/* Vertical Farms Section */}
-      <div className="text-center py-8 px-72 bg-[#F4F3EF]">
-        <h2 className="text-3xl font-bold mb-4">Vertical Farms</h2>
-        <p className="text-gray-500 mb-12 ">
-          Everyone a farmer, Empowering rural households to turn backyards into high-yield mini-farms 0xFarms provides you with the platform to crowdfund a mini-Farm so you can even go commercial
-        </p>
-
-        {/* Partner Logos */}
-        <div className="flex items-center justify-between space-x-12 ">
-
-          <div className="w-24">
-            <VideoPlayer></VideoPlayer>
-          </div>
-          <div className="w-48">
-            <img src="/homeg.jpeg" alt="Ventures" className="w-48 h-72 object-cover rounded-lg" />
-          </div>
-          <div className="w-24">
-            <img src="/api/placeholder/96/48" alt="Flourish" className="w-full" />
-          </div>
-          <div className="w-24">
-            <img src="/api/placeholder/96/48" alt="MDI" className="w-full" />
-          </div>
-        </div>
-      </div>
+ 
     </div>
   );
 };
