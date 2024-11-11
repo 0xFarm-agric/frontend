@@ -58,7 +58,7 @@ const BlogCards: React.FC = () => {
     category: 'Health Blog',
     date: 'January 02,2020',
     title: 'Corona vaious is dangerous,stay away fom it.',
-    image: '/api/placeholder/400/250',
+    image: '/box-with-vegetables.jpg',
     description: 'There are many variations of passages of Lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.'
   });
 
