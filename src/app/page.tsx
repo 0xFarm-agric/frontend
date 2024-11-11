@@ -1,5 +1,4 @@
 import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
 import VideoPlayer from './videoPlayer';
 import BlogCards from './blog';
 
