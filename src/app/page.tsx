@@ -1,6 +1,6 @@
 
 import Link from 'next/link'
-// import { IoCheckmarkDoneSharp } from "react-icons/io5";
+
 
 export default function Home() {
   return (
@@ -35,8 +35,8 @@ export default function Home() {
         <div className="flex justify-around py-14" >
           <div className="text-white px-24-">
             <div className="flex flex-col gap-6 w-11/12 ">
-              <h1 className="text-6xl w-4/6">Lorem ipsum amet, consect consect</h1>
-              <p className="w-4/6">Insecurity has chased our rural farmers away from their farms, plunging the Insecurity has chased our rural farmers away from their farms, plungin.</p>
+              <h1 className="text-6xl w-4/6">Awaking the Oldest Profession</h1>
+              <p className="w-4/6">Revolutionizing Agriculture with Vertical and Decentralized Farming through Real World Assets</p>
               <div className="flex gap-6">
                 <Link className="bg-main hover:text-backgroundColor text-xl px-4 py-2 text-white rounded" href="/signup">Become a Seller</Link>
                 <Link className="bg-main px-4 py-2 text-white text-xl hover:text-backgroundColor rounded" href="/signup">Become a Investor</Link>
@@ -64,25 +64,29 @@ export default function Home() {
           <div className="flex flex-col p-4 items-center gap-4 border-2 border-main rounded-xl h-4/6 w-64">
             <img className="rounded-2xl" src="/box-with-vegetables.jpg" width={300} height={200} alt="" />
             <h3 className="font-semibold text-lg">Vertical farming</h3>
-            <p className="w-80-">Insecurity has chased our rural farmers away from their farms, plunging the Insecurity has chased our rural farmers</p>
+            <p>Vertical farming grows crops indoors in stacked layers. With blockchain, every stage (from planting to harvest) can be securely tracked, giving consumers reliable info on food quality and sustainability. This approach supports urban areas with a safer, more transparent, and efficient food supply system.</p>
+            {/* <p className="w-80-">Insecurity has chased our rural farmers away from their farms, plunging the Insecurity has chased our rural farmers</p> */}
           </div>
 
           <div className="flex flex-col p-4 items-center gap-4 border-2 border-main rounded-xl h-4/6 w-64">
             <img className="rounded-2xl" src="/strawberry-field.jpg" width={300} height={200} alt="" />
             <h3 className="font-semibold text-lg">Homegrown farming</h3>
-            <p className="w-80-">Insecurity has chased our rural farmers away from their farms, plunging the Insecurity has chased our rural farmers</p>
+            <p>Homegrown farming is the practice of growing food, like vegetables and herbs, at home or in local spaces. It focuses on personal or community food production, promoting self-sufficiency, fresher produce, and reduced dependence on commercial food sources.</p>
+            {/* <p className="w-80-">Insecurity has chased our rural farmers away from their farms, plunging the Insecurity has chased our rural farmers</p> */}
           </div>
 
           <div className="flex flex-col p-4 items-center gap-4 border-2 border-main rounded-xl h-4/6 w-64">
             <img className="rounded-2xl" src="/protectingpPlant.jpg" width={300} height={200} alt="" />
             <h3 className="font-semibold text-lg">Educational agricultural content with AI</h3>
-            <p className="w-80-">Insecurity has chased our rural farmers away from their farms, plunging the Insecurity has chased our rural farmers</p>
+            <p>Using artificial intelligence to provide customized information on farming practices, crop management, soil health, and sustainability. By tailoring content to specific learning needs, AI helps farmers, students, and agricultural professionals access practical knowledge and make informed decisions more effectively.</p>
+            {/* <p className="w-80-">Insecurity has chased our rural farmers away from their farms, plunging the Insecurity has chased our rural farmers</p> */}
           </div>
 
           <div className="flex flex-col p-4 items-center gap-4 border-2 border-main rounded-xl h-4/6 w-64">
             <img className="rounded-2xl" src="/strawberry-field.jpg" width={300} height={200} alt="" />
-            <h3 className="font-semibold text-lg">Homegrown farming</h3>
-            <p className="w-80-">Insecurity has chased our rural farmers away from their farms, plunging the Insecurity has chased our rural farmers</p>
+            <h3 className="font-semibold text-lg">Farming Technicians</h3>
+            <p>This are skilled professionals who assist in managing and improving agricultural operations. They handle tasks such as soil testing, equipment maintenance, pest control, and crop monitoring. Their work involves using technology to optimize farming processes, ensuring efficiency and sustainability while boosting productivity and crop yields.</p>
+            {/* <p className="w-80-">Insecurity has chased our rural farmers away from their farms, plunging the Insecurity has chased our rural farmers</p> */}
           </div>
 
         </div>
