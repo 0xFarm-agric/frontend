@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Link from 'next/link'
 // import { IoCheckmarkDoneSharp } from "react-icons/io5";
 

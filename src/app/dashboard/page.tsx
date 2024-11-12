@@ -1,29 +1,8 @@
-// import Image from "next/image";
-// import Link from 'next/link'
-// import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
-
-// export default function Dashboard() {
-//     return (
-//         <div>
-//             <div><img className="rounded-2xl" src="/logo.png" width={160} height={100} alt="" /></div>
-//         </div>
-//     );
-// }
-
-"use client"; // This tells Next.js this is a Client Component
 import Image from "next/image";
-import { useState } from 'react';
-import Link from 'next/link';
-import Leftside from '../dashboard/leftside';
-import Rightside from '../dashboard/rightside';
+import Link from 'next/link'
+import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
 
-const ToggleButton = () => {
-    const [isVisible, setIsVisible] = useState(false);
-
-    const handleClick = () => {
-        setIsVisible(!isVisible);
-    };
-
+export default function Dashboard() {
     return (
         <div>
             <nav className="bg-white">
