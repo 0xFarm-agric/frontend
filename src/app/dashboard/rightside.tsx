@@ -18,7 +18,7 @@ export default function rightSide() {
                     </div>
                     {/* boxcontent */}
                     <div className="flex flex-col items-center gap-2- py-4">
-                        <img className="rounded-lg- rounded-t-3xl" src="/protectingpPlant.jpg" width={240} height={160} alt="" />
+                        <Image className="rounded-lg- rounded-t-3xl" src="/protectingpPlant.jpg" width={240} height={160} alt="" />
                         {/* box content end */}
                         <div className="border border-main flex flex-col gap-5">
                             {/* content */}
@@ -74,7 +74,7 @@ export default function rightSide() {
                     </div>
                     {/* boxcontent */}
                     <div className="flex flex-col items-center gap-2- py-4">
-                        <img className="rounded-lg- rounded-t-3xl" src="/protectingpPlant.jpg" width={240} height={160} alt="" />
+                        <Image className="rounded-lg- rounded-t-3xl" src="/protectingpPlant.jpg" width={240} height={160} alt="" />
                         {/* box content end */}
                         <div className="border border-main flex flex-col gap-5">
                             {/* content */}
@@ -128,7 +128,7 @@ export default function rightSide() {
                     </div>
                     {/* boxcontent */}
                     <div className="flex flex-col items-center gap-2- py-4">
-                        <img className="rounded-lg- rounded-t-3xl" src="/protectingpPlant.jpg" width={240} height={160} alt="" />
+                        <Image className="rounded-lg- rounded-t-3xl" src="/protectingpPlant.jpg" width={240} height={160} alt="" />
                         {/* box content end */}
                         <div className="border border-main flex flex-col gap-5">
                             {/* content */}
@@ -188,7 +188,7 @@ export default function rightSide() {
                     </div>
                     {/* boxcontent */}
                     <div className="flex flex-col items-center gap-2- py-4">
-                        <img className="rounded-lg- rounded-t-3xl" src="/protectingpPlant.jpg" width={240} height={160} alt="" />
+                        <Image className="rounded-lg- rounded-t-3xl" src="/protectingpPlant.jpg" width={240} height={160} alt="" />
                         {/* box content end */}
                         <div className="border border-main flex flex-col gap-5">
                             {/* content */}
@@ -244,7 +244,7 @@ export default function rightSide() {
                     </div>
                     {/* boxcontent */}
                     <div className="flex flex-col items-center gap-2- py-4">
-                        <img className="rounded-lg- rounded-t-3xl" src="/protectingpPlant.jpg" width={240} height={160} alt="" />
+                        <Image className="rounded-lg- rounded-t-3xl" src="/protectingpPlant.jpg" width={240} height={160} alt="" />
                         {/* box content end */}
                         <div className="border border-main flex flex-col gap-5">
                             {/* content */}
@@ -298,7 +298,7 @@ export default function rightSide() {
                     </div>
                     {/* boxcontent */}
                     <div className="flex flex-col items-center gap-2- py-4">
-                        <img className="rounded-lg- rounded-t-3xl" src="/protectingpPlant.jpg" width={240} height={160} alt="" />
+                        <Image className="rounded-lg- rounded-t-3xl" src="/protectingpPlant.jpg" width={240} height={160} alt="" />
                         {/* box content end */}
                         <div className="border border-main flex flex-col gap-5">
                             {/* content */}

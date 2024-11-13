@@ -20,7 +20,7 @@ const ToggleButton = () => {
                 <div className="flex justify-around items-center px-0 sm:px-0 py-2">
                     <div className="text-white- text-lg font-bold">
                         <Link href="#">
-                            <img className="rounded-2xl" src="/logo.png" width={160} height={100} alt="" />
+                            <Image src="/logo.png" width={160} height={100} alt="" />
                         </Link>
                     </div>
 
