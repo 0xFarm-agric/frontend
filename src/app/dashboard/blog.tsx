@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Facebook, Linkedin, Instagram } from 'lucide-react';
+import Image from 'next/image';
 
 interface BlogPost {
   category: string;
@@ -24,7 +25,9 @@ const BlogRow: React.FC<RowProps> = ({ posts, rowIndex }) => (
         className="flex-none w-[250px] bg-white rounded-lg shadow-md"
       >
         <div className="relative">
-          <img 
+          <Image
+          width={120}
+          height={150}
             src={post.image} 
             alt={post.title}
             className="w-full h-[120px] object-cover rounded-t-lg"

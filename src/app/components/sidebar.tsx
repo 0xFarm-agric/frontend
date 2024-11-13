@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from 'react';
-
-const Sidebar = ({ setSelectedScreen }:any) => {
+interface SidebarProps {
+  setSelectedScreen: (screen: string) => void; // Adjust type based on actual usage
+}
+const Sidebar = ({ setSelectedScreen }:SidebarProps) => {
   const [selected, setSelected] = useState<string>(""); // Track selected screen
 
   const handleClick = (screen: string) => {

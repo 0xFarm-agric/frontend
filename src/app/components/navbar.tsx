@@ -1,10 +1,10 @@
 "use client"; import React from 'react';
-
+import Image from 'next/image';
 
 export const Navbar = () => {
   return (
     <div className="bg-[#DAE4D5]  text-white py-2 px-6 flex justify-between items-center">
-      <img width={100} alt='' src={"/logo.png"} />
+      <Image width={100} height={100} alt='' src={"/logo.png"} />
 
       <div className="flex space-x-4">
         <button id="connect-wallet-button" className="px-4  bg-[#3c6454] text-white rounded-xl text-[12px] hover:bg-[#93af1c] hover:text-white focus:outline-none focus:ring-2 focus:ring-green-300">
