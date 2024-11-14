@@ -1,7 +1,5 @@
-
-
-
 "use client";
+
 import React, { useState } from "react";
 import { Sidebar } from "../components/sidebar"; // Assuming Sidebar is in a separate file
 import { Navbar } from "../components/navbar"; // Assuming Navbar is in a separate file
