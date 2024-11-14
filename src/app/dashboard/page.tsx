@@ -21,7 +21,7 @@ export default function Dashboard () {
             <Sidebar setSelectedScreen={setSelectedScreen} />
             <div className="flex-1">
                 <Navbar />
-                <div className="p-8">
+                <div className="p-4">
                     {/* Render content based on selectedScreen */}
                     {selectedScreen === "Portfolio" && <Portfolio/>}
                     {selectedScreen === "VerticalFarms" && <VerticalFarms/>}
