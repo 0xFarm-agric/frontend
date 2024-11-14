@@ -105,7 +105,7 @@ const ToggleButton = () => {
                     {/*  */}
                     <div className=" border border-main flex flex-col gap-4 rounded-2xl drop-shadow-2xl">
                     <Image className="rounded-2xl" src="/Scent Leaf.jpg" width={360} height={300} alt="" />                        <div className=" flex flex-col gap-4 px-4">
-                            <h3 className="text-main font-bold">13TH October 2024</h3>
+                            <h3 className="text-main font-bold">7TH October 2024</h3>
 
                            
               <h2 className=" font-semibold">The Importance and Benefits of Scent Leaf: <br /> Nature’s Healing Herb</h2>
