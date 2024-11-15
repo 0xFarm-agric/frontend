@@ -6,7 +6,7 @@ interface FeatureProps {
   color: string;
 }
 
-const FeatureItem: React.FC<FeatureProps> = ({ text, color }) => (
+const FeatureItem: React.FC<FeatureProps> = ({ text }) => (
   <li className="flex items-center space-x-2">
  <div className="w-1 h-1 bg-black rounded-full"></div>
 
