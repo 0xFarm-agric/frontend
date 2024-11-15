@@ -13,17 +13,17 @@ export default function Home() {
   };
 
   return (
-    <nav className="flex justify-between items-center py-8 px-4 sm:px-16 lg:px-24">
+    <nav className="flex justify-between items-center py-4 px-4 sm:px-16 lg:px-24">
       <div>
-        <Image src="/logo.png" width={160} height={100} alt="oxFramer" />
+        <Image src="/logo.png" width={140} height={90} alt="oxFramer" />
       </div>
 
       {/* Desktop Menu */}
       <div className="hidden md:flex gap-6 sm:gap-4 lg:gap-16">
-        <Link href="#home" className="hover:text-main">Home</Link>
-        <Link href="#product" className="hover:text-main">Products</Link>
-        <Link href="#pricing" className="hover:text-main">Pricing</Link>
-        <Link href="#about" className="hover:text-main">About Us</Link>
+        <Link href="#home" className="hover:text-main hover:font-semibold text-[14px] text-[#778599] font-medium">Home</Link>
+        <Link href="#product" className="hover:text-main hover:font-semibold text-[14px] text-[#778599] font-medium">Products</Link>
+        <Link href="#pricing" className="hover:text-main hover:font-semibold text-[14px] text-[#778599] font-medium">Pricing</Link>
+        <Link href="#about" className="hover:text-main hover:font-semibold text-[14px] text-[#778599] font-medium">About Us</Link>
       </div>
 
       {/* Mobile Toggle Icon */}
@@ -42,13 +42,13 @@ export default function Home() {
           <Link href="#product" className="hover:text-main" onClick={toggleMenu}>Products</Link>
           <Link href="#pricing" className="hover:text-main" onClick={toggleMenu}>Pricing</Link>
           <Link href="#about" className="hover:text-main" onClick={toggleMenu}>About Us</Link>
-          <Link className="bg-main text-white px-8 py-3 rounded-3xl text-xl mt-4" href="#signup" onClick={toggleMenu}>Get Started</Link>
+          <Link className="bg-main text-white px-8 py-3 font-medium rounded-3xl text-[12px] mt-4" href="#signup" onClick={toggleMenu}>Get Started</Link>
         </div>
       )}
 
       {/* Get Started Button for Desktop */}
       <div className="hidden md:block">
-        <Link className="bg-main text-white px-8 py-3 rounded-3xl text-xl" href="#signup">Get Started</Link>
+        <Link className="bg-main text-white px-5 py-2 rounded-3xl text-[12px]" href="#signup">Get Started</Link>
       </div>
     </nav>
 

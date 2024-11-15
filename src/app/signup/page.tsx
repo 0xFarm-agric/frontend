@@ -14,7 +14,7 @@ export default function Signup() {
 
                 <div>
                     <ul className="flex gap-6">
-                        <li  className="hover:text-main"><a href="">Home</a></li>
+                        <li  className="hover:text-main text-[#778599] text-white"><a href="">Home</a></li>
                         <li  className="hover:text-main"><a href="" id=''>Service</a></li>
                         <li  className="hover:text-main"><a href="">About</a></li>
                         <li className="hover:text-main"><a href="">Blog</a></li>
