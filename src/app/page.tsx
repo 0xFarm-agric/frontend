@@ -189,7 +189,7 @@ export default function Home() {
 
             <h3 className="font-semibold- text-2xl font-normal">Smart Irrigation Systems</h3>
             <p className="w-72- text-lg tracking-wide text-gray-500">Save water and optimize growth with automated irrigation solutions. This helps in improving long-term profits and growth.</p>
-            <Link className="bg-main flex gap-4 items-center text-white px-8 py-3 rounded-full text-xl" href="#signup">Get Started <IoIosArrowForward /></Link>
+            <Link className="bg-main flex gap-4 items-center text-white px-6 py-3 rounded-full text-xl" href="#signup">Get Started <IoIosArrowForward /></Link>
 
 
           </div>
@@ -214,12 +214,12 @@ export default function Home() {
 
 
           <div className="rounded-3xl flex flex-col items-start py-6 px-4 gap-8 w-80 md:w-[500px] h-80">
-            <p className="flex justify-center items-center border-2 rounded-full px-2 py-2 text-2xl">Mission</p>
+            <p className="flex justify-center items-center border-2 rounded-full px-2 py-2 text-2xl">Vision</p>
 
 
             <h3 className="font-semibold- text-2xl font-normal">Smart Irrigation Systems</h3>
             <p className="w-72- text-lg tracking-wide text-gray-500">Save water and optimize growth with automated irrigation solutions. This helps in improving long-term profits and growth.</p>
-            <Link className="bg-main flex gap-4 items-center text-white px-8 py-3 rounded-full text-xl" href="#signup">Get Started <IoIosArrowForward /></Link>
+            <Link className="bg-main flex gap-4 items-center text-white px-6 py-3 rounded-full text-xl" href="#signup">Get Started <IoIosArrowForward /></Link>
 
 
           </div>
@@ -251,7 +251,7 @@ export default function Home() {
 
         {/* pricing box */}
 
-        <div className="flex gap-8">
+        <div className="flex flex-col md:flex-row gap-8">
           <div className=" border-2 bg-white flex flex-col gap-6 px-4 py-4 hover:drop-shadow-2xl rounded-2xl">
             <h1 className="text-main text-lg">Basic</h1>
 
@@ -316,10 +316,9 @@ export default function Home() {
       {/* pricing end */}
 
       {/* partner */}
-      {/* rating */}
       <div className="flex flex-col sm:flex-row justify-center gap-8 md:gap-32 items-center py-32">
         <div>
-          <h1 className="text-sm md:text-xl text-gray-500">Satisfied <br /> Customers</h1>
+          <h1 className="text-sm md:text-xl text-gray-500">Over 30+ <br /> Partners</h1>
         </div>
         <div className="flex flex-col gap-4">
           <h1 className="text-sm md:text-xl text-gray-500">company </h1>
@@ -340,17 +339,64 @@ export default function Home() {
 
       {/* success */}
 
-      {/* pricing */}
+      {/* success */}
       <div className="flex flex-col justify-center items-center gap-10 py-4 md:py-10 bg-backgroundColor ">
         {/* BOX */}
-        <div className="flex justify-center items-center border-2 rounded-full px-2 py-2">
-          <p className=" text-2xl">Pricing</p>
+        <div className="flex flex-col gap-6 justify-center items-center">
+          <p className="text-xl md:text-6xl text-center font-light">Get all the tools you <br /> need for success
+          </p>
+          <p className="">Join over 300+ partner and customers already growing with FarmTech
+          </p>
+          <Link className="bg-main  text-center px-6 py-2 rounded-full text-xl py-9-" href="#signup">Start today</Link>
+
         </div>
+
         {/* BOX end*/}
       </div>
 
-      {/* success */}
+      {/* success end */}
 
+      {/* subscribe */}
+      <div className="flex md:flex-row flex-col items-center- justify-center md:justify-around  py-20">
+        <div className="flex flex-col gap-4">
+          <h1 className="font-semibold- text-3xl ">Subscribe to our <br /> newsletter</h1>
+          <div className="border px-4 py-4 rounded-full ">
+            <input className="border-none" placeholder="enter your email" type="text" />
+            <Link className="bg-main  text-center px-6 py-2 rounded-full text-xl py-9-" href="#signup">Subscribe</Link>
+          </div>
+        </div>
+        <div className="flex flex-col gap-2">
+          <h3 className="font-semibold">Explore</h3>
+          <p className=" text-gray-600">Home</p>
+          <p className=" text-gray-600">Service</p>
+          <p className=" text-gray-600">About us</p>
+          <p className=" text-gray-600">Contact us</p>
+
+        </div>
+        <div className="flex flex-col gap-2">
+          <h1 className="font-semibold">Socials</h1>
+          <p className=" text-gray-600">linkedin</p>
+          <p className=" text-gray-600">instagram</p>
+
+          <p className=" text-gray-600">Twitter</p>
+          <p className=" text-gray-600">Email</p>
+
+        </div>
+        <div className="flex flex-col gap-2">
+          <h3 className="font-semibold">Legal</h3>
+          <p className=" text-gray-600">Term of use</p>
+          <p className=" text-gray-600">Privacy Policy</p>
+        </div>
+
+      </div>
+      {/* subscribe end*/}
+
+      {/* copyright */}
+      <div className="flex flex-col md:flex-row justify-center items-center- lg:justify-between px-4 md:px-20">
+        <p>Copyright 2024 Oxframer All rights reserved </p>
+        <p>Terms and condition</p>
+      </div>
+      {/* copyright end */}
 
     </main>
   );
