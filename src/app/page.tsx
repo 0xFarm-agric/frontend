@@ -19,10 +19,10 @@ export default function Home() {
         </div>
         {/* BOX end*/}
 
-        <div className=" flex flex-col justify-center items-center text-center gap-8">
+        <div className="flex flex-col justify-center items-center text-center gap-8">
           <h1 className="text-lg md:text-6xl w-7/12  tracking-wide font-semibold">Revolutionizing Agriculture with
             <a className="text-main text-6xl font-bold"> Smart Solution</a></h1>
-          <p className="w-8/12 sm:w-6/12 font-normal text-[12px] text-gray-600">Transforming agriculture for a sustainable future—our platform offers cutting-edge solutions like vertical farming powered by Web3 investments, the AI Gardener's Companion to simplify home-grown farming, expert training and educational resources, smart contract-driven supply chain management, and urban farming innovations to reshape how we grow and consume food.
+          <p className="w-8/12 sm:w-6/12 font-normal text-[12px] text-gray-600">Transforming agriculture for a sustainable future—our platform offers cutting-edge solutions like vertical farming powered by Web3 investments, the AI Gardeners Companion to simplify home-grown farming, expert training and educational resources, smart contract-driven supply chain management, and urban farming innovations to reshape how we grow and consume food.
           </p>
 
 
@@ -133,7 +133,7 @@ export default function Home() {
         </div>
         {/* BOX end*/}
 
-        <div className=" flex flex-col justify-center items-center text-center gap-8 ">
+        <div className=" flex flex-col justify-center items-center text-center gap-8">
           <h1 className="text-xl md:text-3xl w-800 tracking-wide font-medium">How 0xFarms works</h1>
           <p className="w-7/12 text-gray-600 text-sm">Awakening the oldest professional, Empowering urban households to turn backyards into high-yield mini-farms, State-of-the-art web3 and AI powered vertical farms in urban centers with flexible rental farming plans.
           </p>
@@ -158,7 +158,6 @@ export default function Home() {
 
         {/* two */}
 
-
         <div className="flex flex-col md:flex-row gap-20 py-10" >
           <div className="bg-gray-200 rounded-3xl flex flex-col py-6 px-4 gap-8 w-80 md:w-[500px] h-80">
             <Image src="/icon.png" width={80} height={40} alt="oxFramer" />
@@ -179,8 +178,6 @@ export default function Home() {
 
       </div>
 
-      {/* solutions end */}
-
       {/* mission */}
 
       <div className="flex flex-col justify-center items-center gap-10 py-4 ">
@@ -188,7 +185,6 @@ export default function Home() {
         <div className="flex justify-center items-center border-[1px] rounded-full px-2 py-2">
           <p className=" text-xl px-2 font-thin">Why Choose Us</p>
         </div>
-
 
         <div className="flex flex-col md:flex-row gap-20 py-10" >
           <div className=" flex flex-col py-6 px-4 gap-8 h-80">
@@ -199,11 +195,9 @@ export default function Home() {
           <div className="rounded-3xl flex flex-col items-start py-6 px-4 gap-8 w-80 md:w-[500px] h-80">
             <p className="flex justify-center items-center border-[1px] rounded-full px-4 py-2 text-sm">Mission</p>
 
-
             <h3 className="font-semibold- text-2xl font-normal">Eradicate Poverty through Agric</h3>
             <p className="w-72- text-lg font-thin tracking-wide text-gray-600">Save water and optimize growth with automated irrigation solutions. This helps in improving long-term profits and growth.</p>
-            <Link className="bg-main flex gap-4 items-center text-white px-6 py-3 font-thin rounded-full text-lg" href="#signup">Get Started <IoIosArrowForward /></Link>
-
+            <Link className="bg-main flex gap-4 items-center text-white px-6 py-3 font-thin rounded-full text-lg" href="#signup">Get Started<IoIosArrowForward /></Link>
 
           </div>
 
@@ -212,25 +206,18 @@ export default function Home() {
       </div>
       {/* mission */}
 
-
       {/* vision */}
-
 
       <div className="flex flex-col justify-center items-center gap-10 py-2">
        
-
-
         <div className="flex flex-col md:flex-row gap-20 py-10" >
-
 
           <div className="rounded-3xl flex flex-col items-start py-6 px-4 gap-8 w-80 md:w-[500px] h-80">
           <p className="flex justify-center items-center border-[1px] rounded-full px-4 py-2 text-sm">Vision</p>
 
-
             <h3 className="font-semibold- text-2xl font-normal">World Farming</h3>
             <p className="w-72- text-lg font-thin tracking-wide text-gray-600">Save water and optimize growth with automated irrigation solutions. This helps in improving long-term profits and growth.</p>
             <Link className="bg-main flex gap-4 items-center text-white px-6 py-3 font-thin rounded-full text-lg" href="#signup">Get Started <IoIosArrowForward /></Link>
-
 
           </div>
 
@@ -244,7 +231,6 @@ export default function Home() {
       </div>
 
       {/* vision end */}
-
 
       {/* pricing */}
       <div className="flex flex-col justify-center items-center gap-10 py-4 md:py-10 bg-backgroundColor ">
@@ -270,7 +256,6 @@ export default function Home() {
 
             <Link className="hover:bg-main border border-main text-center px-8 py-2 rounded-full text-xl" href="#signup">Get Started</Link>
 
-
             <div className="flex flex-col gap-4">
               <p>Basic IOT Session</p>
               <p>Data analytics</p>
@@ -289,7 +274,6 @@ export default function Home() {
             <p><a className="text-6xl" href="#">$299</a>/month</p>
 
             <Link className="hover:bg-main border border-main text-center px-8 py-2 rounded-full text-xl" href="#signup">Get Started</Link>
-
 
             <div className="flex flex-col gap-4">
               <p>Basic IOT Session</p>
@@ -322,8 +306,6 @@ export default function Home() {
 
         {/* pricing box end */}
       </div>
-
-      {/* pricing end */}
 
       {/* partner */}
       <div className="flex flex-col sm:flex-row justify-center gap-8 md:gap-32 items-center py-32">
@@ -399,7 +381,6 @@ export default function Home() {
         </div>
 
       </div>
-      {/* subscribe end*/}
 
       {/* copyright */}
       <div className="flex flex-col md:flex-row justify-center items-center- lg:justify-between font-thin text-gray-600 px-4 md:px-20 mb-8">
