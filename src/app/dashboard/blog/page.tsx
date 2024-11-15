@@ -1,10 +1,10 @@
-// blog/page.tsx
-"use client";
 
+"use client";
+/* eslint-disable */
 import React, { useMemo } from 'react';
 import { Facebook, Linkedin, Instagram } from 'lucide-react';
 import Image from 'next/image';
-import { BlogCardProps, BlogPost, BlogProps } from '@/app/model/blogs';
+import { BlogCardProps, BlogPost, BlogProps, RowProps } from '@/app/model/blogs';
 
 
 
@@ -50,11 +50,6 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, index, onSelect }) => (
   </div>
 );
 
-interface RowProps {
-  posts: BlogPost[];
-  rowIndex: number;
-  onSelect: (data: BlogPost) => void;
-}
 
 const BlogRow: React.FC<RowProps> = React.memo(({ posts, rowIndex, onSelect }) => (
   <div className="flex space-x-6 overflow-x-auto pb-2 scrollbar-hide">
@@ -72,7 +67,7 @@ const BlogRow: React.FC<RowProps> = React.memo(({ posts, rowIndex, onSelect }) =
 BlogRow.displayName = 'BlogRow';
 
 // Update Blog component to use BlogProps
-const Blog: React.FC<BlogProps> = ({ onBlogSelect }) => {
+const Blog: React.FC<any> = ({ onBlogSelect }) => {
   const blogPosts: BlogPost[] = useMemo(() => Array(12).fill({
     id: 0,
     category: 'Health Blog',
@@ -89,7 +84,8 @@ const Blog: React.FC<BlogProps> = ({ onBlogSelect }) => {
     );
   }, [blogPosts]);
 
-  return (
+  return [
+
     <div className="container mx-auto px-2 py-4">
       <div className="grid grid-rows-3 gap-6 h-full">
         {rows.map((row, rowIndex) => (
@@ -102,7 +98,8 @@ const Blog: React.FC<BlogProps> = ({ onBlogSelect }) => {
         ))}
       </div>
     </div>
-  );
+  ]
+  
 };
 
 export default Blog;

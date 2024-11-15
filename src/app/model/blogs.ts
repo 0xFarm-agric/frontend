@@ -1,9 +1,14 @@
 
   
- export interface BlogProps {
+export interface RowProps {
+    posts: BlogPost[];
+    rowIndex: number;
+    onSelect: (data: BlogPost) => void;
+  }
+  
+  export  interface BlogProps {
     onBlogSelect: (data: BlogPost) => void;
     }
-  
  export interface BlogCardProps {
     post: BlogPost;
     index: number;
