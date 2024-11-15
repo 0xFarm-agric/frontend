@@ -15,7 +15,6 @@ const CrowdFunding = dynamic(() => import("./crowdFunding"));
 const BlogPage = dynamic(() => import("./blog/blogPage"));
 
 
-
 export default function Dashboard() {
     const [selectedScreen, setSelectedScreen] = useState<string>("Portfolio");
     const [blogData, setBlogData] = useState<BlogData | null>(null);
