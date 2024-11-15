@@ -1,201 +1,403 @@
-import Image from 'next/image'
+import Image from "next/image";
 import Link from 'next/link'
-
-
+import { IoIosArrowForward } from "react-icons/io";
+import Homenav from '../app/components/homenavbar'
 export default function Home() {
   return (
-    <div>
-      <nav className="flex justify-around bg-white text-white- items-center py-2">
+    <main>
+      <Homenav />
+
+      {/* HERO */}
+      <div className="flex flex-col justify-center items-center gap-10 py-4 md:py-10">
+        {/* BOX */}
+        <div className="flex justify-center items-center border-2 rounded-full px-2">
+          <Image src="/flower.png" width={60} height={0} alt="Picture of the author" />
+          <p className=" text-xl">Best Afrotech Network</p>
+        </div>
+        {/* BOX end*/}
+
+        <div className=" flex flex-col justify-center items-center text-center gap-8">
+          <h1 className="text-xl md:text-5xl w-6/12 font-semibold- tracking-wide font-normal">Revolutionizing Framing With <a className="text-main" href="#">Smart Solution</a></h1>
+          <p className="w-8/12 sm:w-6/12">Unlocking the ptotential of modern agriculture by integrating innovation technologies that boost crop productivity, improve sustainability, and empower framers to thrive in an evolving landscape.</p>
+
+          <Link className="bg-main text-white px-8 py-3 rounded-full text-xl" href="#signup">Get Started</Link>
+          <Image src="/headshot.png" width={160} height={100} alt="oxFramer" />
+        </div>
+
+      </div>
+
+
+      {/* HERO END */}
+
+      {/* images end */}
+      <div className="flex flex-col md:flex-row justify-center items-center gap-8">
         <div>
-          <Image className="rounded-2xl" src="/logo.png" width={160} height={100} alt="" />
+          <Image src="/one.png" width={440} height={200} alt="oxFramer" />
         </div>
 
         <div>
-          <ul className="flex gap-6">
-            <Link className="hover:text-main" href="">Home</Link>
-            <li className="hover:text-main" id="blog">Service</li>
-            {/* <Link className="hover:text-main" href="#" id='works'>How It Works</Link> */}
-            {/* <Link ></Link> */}
-            <Link className="hover:text-main" href="#blog" >blog</Link>
-            <Link className="hover:text-main" href="#" id="contact">Contact us</Link>
-          </ul>
+          <Image src="/two.png" width={260} height={100} alt="oxFramer" />
         </div>
 
-        <div className="flex gap-6 text-white-">
-          <Link className="bg-main  px-8 py-1 text-white rounded" href="/login">Login</Link>
-          <Link className="border border-main text-black  px-8 py-1 rounded" href="/signup">Sign up</Link>
+        <div>
+          <Image src="/three.png" width={260} height={180} alt="oxFramer" />
+        </div>
+      </div>
+      {/* images end */}
+
+
+      {/* rating */}
+      <div className="flex flex-col sm:flex-row justify-center gap-8 md:gap-32 items-center py-32">
+        <div>
+          <h1 className="text-sm md:text-xl text-gray-500">Satisfied <br /> Customers</h1>
+        </div>
+        <div className="flex flex-col gap-4">
+          <h1 className="text-sm md:text-xl text-gray-500">Satisfied <br />Customers</h1>
+          <p className="text-6xl text-main">1M+</p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <h1 className="text-sm md:text-xl text-gray-500">Total project <br /> completed</h1>
+          <p className="text-6xl">19K</p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <h1 className="text-sm md:text-xl text-gray-500">Total years of <br /> experience</h1>
+          <p className="text-6xl">09+</p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <h1 className="text-sm md:text-xl text-gray-500">Satisfied <br />Partner</h1>
+          <p className="text-6xl">5K</p>
+        </div>
+
+      </div>
+      {/* rating end */}
+
+      {/* what we do */}
+      <div className="flex flex-col justify-center items-center gap-10 py-4 md:py-10 bg-backgroundColor">
+        {/* BOX */}
+        <div className="flex justify-center items-center border-2 rounded-full px-2 py-2">
+          <p className=" text-2xl">What We Do</p>
+        </div>
+        {/* BOX end*/}
+
+        <div className=" flex flex-col justify-center items-center text-center gap-8">
+          <h1 className="text-xl md:text-3xl w-800 font-semibold- tracking-wide font-normal">Revolutionizing Modern Agriculture</h1>
+          <p className="w-7/12 text-gray-500 text-lg">Harness the power of cutting-edge technology to boost farm productivity, reduce operational costs, and ensure sustainable practices.</p>
+        </div>
+
+        <div className="flex flex-col md:flex-row gap-6" >
+          <div className="bg-white rounded-3xl flex flex-col py-6 px-4 gap-8 w-80 md:w-[340px] h-96">
+            <Image src="/icon.png" width={80} height={40} alt="oxFramer" />
+
+            <h3 className="font-semibold- text-2xl font-normal">Smart Irrigation Systems</h3>
+            <p className="w-72 text-lg tracking-wide text-gray-500">Save water and optimize growth with automated irrigation solutions. This helps in improving long-term profits and growth.</p>
+            <Link className="flex items-center gap-4 text-main text-xl" href="/dashboard">Get in Touch <IoIosArrowForward /></Link>
+          </div>
+
+          <div className="bg-white rounded-3xl flex flex-col py-6 px-4 gap-8 w-80 md:w-[340px] h-96">
+            <Image src="/icon.png" width={80} height={40} alt="oxFramer" />
+
+            <h3 className="font-semibold- text-2xl font-normal">Smart Irrigation Systems</h3>
+            <p className="w-72 text-lg tracking-wide text-gray-500">Save water and optimize growth with automated irrigation solutions. This helps in improving long-term profits and growth.</p>
+            <Link className="flex items-center gap-4 text-main text-xl" href="/dashboard">Get in Touch <IoIosArrowForward /></Link>
+          </div>
+          <div className="bg-white rounded-3xl flex flex-col py-6 px-4 gap-8 w-80 md:w-[340px] h-96">
+            <Image src="/icon.png" width={80} height={40} alt="oxFramer" />
+
+            <h3 className="font-semibold- text-2xl font-normal">Smart Irrigation Systems</h3>
+            <p className="w-72 text-lg tracking-wide text-gray-500">Save water and optimize growth with automated irrigation solutions. This helps in improving long-term profits and growth.</p>
+            <Link className="flex items-center gap-4 text-main text-xl" href="/dashboard">Get in Touch <IoIosArrowForward /></Link>
+          </div>
+        </div>
+
+      </div>
+
+      {/* what we do end */}
+
+      {/* solution */}
+      <div className="flex flex-col justify-center items-center gap-10 py-4 md:py-10 ">
+        {/* BOX */}
+        <div className="flex justify-center items-center border-2 rounded-full px-2 py-2">
+          <p className=" text-2xl">Unique Solution</p>
+        </div>
+        {/* BOX end*/}
+
+        <div className=" flex flex-col justify-center items-center text-center gap-8 ">
+          <h1 className="text-xl md:text-3xl w-800 font-semibold- tracking-wide font-normal">Revolutionizing Modern Agriculture</h1>
+          <p className="w-7/12 text-gray-500 text-lg">Harness the power of cutting-edge technology to boost farm productivity, reduce operational costs, and ensure sustainable practices.</p>
+        </div>
+
+        <div className="flex flex-col md:flex-row gap-20" >
+          <div className="bg-gray-200 rounded-3xl flex flex-col py-6 px-4 gap-8 w-80 md:w-[500px] h-80">
+            <Image src="/icon.png" width={80} height={40} alt="oxFramer" />
+
+            <h3 className="font-semibold- text-2xl font-normal">Smart Irrigation Systems</h3>
+            <p className="w-80- text-lg tracking-wide text-gray-500">Save water and optimize growth with automated irrigation solutions. This helps in improving long-term profits and growth.</p>
+          </div>
+
+          <div className="bg-gray-200 rounded-3xl flex flex-col py-6 px-4 gap-8 w-80 md:w-[500px] h-80">
+            <Image src="/icon.png" width={80} height={40} alt="oxFramer" />
+
+            <h3 className="font-semibold- text-2xl font-normal">Smart Irrigation Systems</h3>
+            <p className="w-72- text-lg tracking-wide text-gray-500">Save water and optimize growth with automated irrigation solutions. This helps in improving long-term profits and growth.</p>
+          </div>
+
+        </div>
+
+        {/* two */}
+
+
+        <div className="flex flex-col md:flex-row gap-20 py-10" >
+          <div className="bg-gray-200 rounded-3xl flex flex-col py-6 px-4 gap-8 w-80 md:w-[500px] h-80">
+            <Image src="/icon.png" width={80} height={40} alt="oxFramer" />
+
+            <h3 className="font-semibold- text-2xl font-normal">Smart Irrigation Systems</h3>
+            <p className="w-80- text-lg tracking-wide text-gray-500">Save water and optimize growth with automated irrigation solutions. This helps in improving long-term profits and growth.</p>
+          </div>
+
+          <div className="bg-gray-200 rounded-3xl flex flex-col py-6 px-4 gap-8 w-80 md:w-[500px] h-80">
+            <Image src="/icon.png" width={80} height={40} alt="oxFramer" />
+
+            <h3 className="font-semibold- text-2xl font-normal">Smart Irrigation Systems</h3>
+            <p className="w-72- text-lg tracking-wide text-gray-500">Save water and optimize growth with automated irrigation solutions. This helps in improving long-term profits and growth.</p>
+          </div>
+
+        </div>
+        {/* two end */}
+
+      </div>
+
+      {/* solutions end */}
+
+      {/* mission */}
+
+      <div className="flex flex-col justify-center items-center gap-10 py-4 md:py-10">
+        {/* two */}
+        <div className="flex justify-center items-center border-2 rounded-full px-2 py-2">
+          <p className=" text-2xl">What We Do</p>
         </div>
 
 
-      </nav>
+        <div className="flex flex-col md:flex-row gap-20 py-10" >
+          <div className=" flex flex-col py-6 px-4 gap-8 h-80">
+            <Image className="rounded-3xl" src="/farm-workers-collegues.jpg" width={500} height={400} alt="oxFramer" />
 
-      {/* <section></section> */}
-      {/* herosection */}
-      <div className="homeImg">
+          </div>
 
-        <div className="flex justify-around py-14" >
-          <div className="text-white px-24-">
-            <div className="flex flex-col gap-6 w-11/12 ">
-              <h1 className="text-6xl w-4/6">Awaking the Oldest Profession</h1>
-              <p className="w-4/6">Revolutionizing Agriculture with Vertical and Decentralized Farming through Real World Assets</p>
-              <div className="flex gap-6">
-                <Link className="bg-main hover:text-backgroundColor text-xl px-4 py-2 text-white rounded" href="/signup">Become a Seller</Link>
-                <Link className="bg-main px-4 py-2 text-white text-xl hover:text-backgroundColor rounded" href="/signup">Become a Investor</Link>
+          <div className="rounded-3xl flex flex-col items-start py-6 px-4 gap-8 w-80 md:w-[500px] h-80">
+            <p className="flex justify-center items-center border-2 rounded-full px-2 py-2 text-2xl">Mission</p>
 
-              </div>
+
+            <h3 className="font-semibold- text-2xl font-normal">Smart Irrigation Systems</h3>
+            <p className="w-72- text-lg tracking-wide text-gray-500">Save water and optimize growth with automated irrigation solutions. This helps in improving long-term profits and growth.</p>
+            <Link className="bg-main flex gap-4 items-center text-white px-6 py-3 rounded-full text-xl" href="#signup">Get Started <IoIosArrowForward /></Link>
+
+
+          </div>
+
+        </div>
+        {/* two end */}
+      </div>
+      {/* mission */}
+
+
+      {/* vision */}
+
+
+      <div className="flex flex-col justify-center items-center gap-10 py-4 md:py-10">
+        {/* two */}
+        <div className="flex justify-center items-center border-2 rounded-full px-2 py-2">
+          <p className=" text-2xl">Why Choose Us</p>
+        </div>
+
+
+        <div className="flex flex-col md:flex-row gap-20 py-10" >
+
+
+          <div className="rounded-3xl flex flex-col items-start py-6 px-4 gap-8 w-80 md:w-[500px] h-80">
+            <p className="flex justify-center items-center border-2 rounded-full px-2 py-2 text-2xl">Vision</p>
+
+
+            <h3 className="font-semibold- text-2xl font-normal">Smart Irrigation Systems</h3>
+            <p className="w-72- text-lg tracking-wide text-gray-500">Save water and optimize growth with automated irrigation solutions. This helps in improving long-term profits and growth.</p>
+            <Link className="bg-main flex gap-4 items-center text-white px-6 py-3 rounded-full text-xl" href="#signup">Get Started <IoIosArrowForward /></Link>
+
+
+          </div>
+
+          <div className=" flex flex-col py-6 px-4 gap-8 h-80">
+            <Image className="rounded-3xl" src="/farm-workers-collegues.jpg" width={500} height={400} alt="oxFramer" />
+
+          </div>
+
+        </div>
+        {/* two end */}
+      </div>
+
+      {/* vision end */}
+
+
+      {/* pricing */}
+      <div className="flex flex-col justify-center items-center gap-10 py-4 md:py-10 bg-backgroundColor ">
+        {/* BOX */}
+        <div className="flex justify-center items-center border-2 rounded-full px-2 py-2">
+          <p className=" text-2xl">Pricing</p>
+        </div>
+        {/* BOX end*/}
+
+        <div className=" flex flex-col justify-center items-center text-center gap-8 border-">
+          <h1 className="text-xl md:text-3xl w-800 font-semibold- tracking-wide font-normal">Revolutionizing Modern Agriculture</h1>
+          <p className="w-7/12 text-gray-500 text-lg">Harness the power of cutting-edge technology to boost farm productivity, reduce operational costs, and ensure sustainable practices.</p>
+        </div>
+
+        {/* pricing box */}
+
+        <div className="flex flex-col md:flex-row gap-8">
+          <div className=" border-2 bg-white flex flex-col gap-6 px-4 py-4 hover:drop-shadow-2xl rounded-2xl">
+            <h1 className="text-main text-lg">Basic</h1>
+
+            <p>For personal Use and exploration of <br /> AI technoloy </p>
+            <p><a className="text-3xl" href="#">$99</a>/month</p>
+
+            <Link className="hover:bg-main border border-main text-center px-8 py-2 rounded-full text-xl" href="#signup">Get Started</Link>
+
+
+            <div className="flex flex-col gap-4">
+              <p>Basic IOT Session</p>
+              <p>Data analytics</p>
+              <p>Basic security</p>
+              <p>Farm management tools</p>
             </div>
+
           </div>
 
-          <div></div>
-        </div>
-
-      </div>
-
-
-
-
-      {/* /hero end */}
-      {/* service */}
-      <div className="flex flex-col gap-8 top-16 relative flex-wrap">
-        <div className="text-center">
-          <Link href="" id="#work" className="text-3xl font-semibold">How It Works</Link>
-        </div>
-
-        <div className="flex flex-row gap-6 justify-center flex-wrap-">
-          <div className="flex flex-col p-4  gap-4 border-2 border-main rounded-xl h-64 w-64">
-            <h3 className="font-semibold text-lg">Vertical farming</h3>
-            <p className="text-sm">This grows crops indoors in stacked layers. With blockchain, every stage (from planting to harvest) can be securely tracked, giving consumers reliable info on food quality and sustainability. This approach supports urban areas with a safer, more transparent, and efficient food supply system.</p>
-          </div>
-
-          <div className="flex flex-col p-4  gap-4 border-2 border-main rounded-xl h-64 w-64">
-            <h3 className="font-semibold text-lg">Homegrown farming</h3>
-            <p className="text-sm">Homegrown farming is the practice of growing food, like vegetables and herbs, at home or in local spaces. It focuses on personal or community food production, promoting self-sufficiency, fresher produce, and reduced dependence on commercial food sources.</p>
-          </div>
-
-          <div className="flex flex-col p-4  gap-4 border-2 border-main rounded-xl h-64 w-64 ">
-            <h3 className="font-semibold text-lg">Educational agricultural content with AI</h3>
-            <p className="text-sm">Using artificial intelligence to provide customized information on farming practices, crop management, soil health, and sustainability. By tailoring content to specific learning needs, AI helps farmers, students, and agricultural professionals.</p>
-          </div>
-
-          <div className="flex flex-col p-4 items-center gap-4 border-2 border-main rounded-xl h-64 w-64">
-            <h3 className="font-semibold text-lg">Farming Technicians</h3>
-            <p className="text-sm">This are skilled professionals who assist in managing and improving agricultural operations. They handle tasks such as soil testing, equipment maintenance, pest control, and crop monitoring. Their work involves using technology to optimize farming processes.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-      {/*  HOW IT WORKS end*/}
-
-
-
-      {/* service */}
-      <div className=" flex flex-col gap-10 top-32 relative">
-        <Link className='text-center font-semibold text-2xl' href="#service" >Service</Link>
-        {/* col1 end */}
-        <div className="flex flex-row justify-center gap-8 flex-wrap">
-          <div className="border border-main rounded-xl drop-shadow-2xl bg-white w-72 h-36 flex flex-col gap-6 justify-center text-center items-center ">
-            <h3 className="font-semibold text-main">Supply Chain Tracking</h3>
-            <p>Ensure transparency by tracking products from farm to consumer.</p>
-          </div>
-
-          <div className='border border-main rounded-xl drop-shadow-2xl bg-white w-72 h-36 flex flex-col gap-6 justify-center text-center items-center '>
-            <h3 className="font-semibold text-main">Smart Contracts</h3>
-            <p>Automate secure transactions between farmers, suppliers, and buyers.</p>
-          </div>
-
-          <div className="border border-main rounded-xl drop-shadow-2xl bg-white w-72 h-36 flex flex-col gap-6 justify-center text-center items-center ">
-            <h3 className="font-semibold text-main">Token Rewards</h3>
-            <p>Reward users and farmers with tokens for sustainable actions.</p>
-          </div>
-
-        </div>
-        {/* col1 end */}
-        {/* col 2 */}
-        <div className='flex justify-center gap-8 flex-wrap'>
-
-          <div className="border border-main rounded-xl drop-shadow-2xl bg-white w-72 h-36 flex flex-col gap-6 justify-center items-center text-center">
-            <h3 className="font-semibold text-main">Direct Marketplaces</h3>
-            <p>Enable farmers to sell their products directly to consumers, eliminating middlemen.</p>
-          </div>
-
-          <div className="border border-main rounded-xl drop-shadow-2xl bg-white w-72 h-36 flex flex-col gap-6 justify-center items-center  text-center ">
-            <h3 className="font-semibold text-main">Data Sharing</h3>
-            <p className="px-4">Let farmers share data like weather and crop performance securely for better insights.</p>
-          </div>
-
-          <div className="border border-main rounded-xl drop-shadow-2xl bg-white w-72 h-36 flex flex-col gap-6 justify-center items-center  text-center">
-            <h3 className="font-semibold text-main">Crop Insurance</h3>
-            <p>Offer automated insurance based on real-time data, ensuring fair claims.</p>
-          </div>
-        </div>
-        {/* col 2 end */}
-
-      </div>
-
-      {/* about end */}
-
-
-      {/* blog */}
-      <div className="flex flex-col justify-center items-center gap-14 top-44 relative">
-        <div className="text-center">
-          <Link href="#blog"  className="text-3xl">Our Lastest News and Blog</Link>
-        </div>
-        {/*box*/}
-        <div className="flex flex-row flex-wrap gap-6 shadow-2xl-">
-          <div className=" border border-main flex flex-col gap-4 rounded-2xl drop-shadow-2xl">
-            <Image className="rounded-2xl" src="/plant.png" width={360} height={300} alt="" />
-            <div className=" flex flex-col gap-4 px-4">
-              <h3 className="text-main font-bold">13TH October 2024</h3>
-
-              <h2 className='font-semibold'>Embracing Digitalized Farming: Shaping <br /> the Future of Agriculture</h2>
-              <p className='w-80'>The agricultural industry is undergoing a profound transformation, driven by the digital revolution. Digitalized farming, which integrates advanced technologies like the Internet of Things (IoT), big data, artificial intelligence (AI), and blockchain</p>
-
-              <Link className="text-main font-bold" href="/signup">Read More</Link>
+          <div className=" border-2 bg-white flex flex-col gap-6 px-8 py-4 hover:drop-shadow-2xl rounded-2xl">
+            <div className="flex justify-between">
+              <h1 className="text-main text-lg">Premium </h1>
+              <p>popular</p>
             </div>
-          </div>
+            <p>For personal Use and exploration of <br /> AI technoloy </p>
+            <p><a className="text-6xl" href="#">$299</a>/month</p>
 
-          {/*  */}
-          <div className=" border border-main flex flex-col gap-4 rounded-2xl drop-shadow-2xl">
-            <Image className="rounded-2xl" src="/side-view-tomatoes.jpg" width={360} height={300} alt="" />
-            <div className=" flex flex-col gap-4 px-4">
-              <h3 className="text-main font-bold">10TH October 2024</h3>
-              <h2 className="font-semibold">The Importance and Benefits of Tomatoes: <br /> A Nutrient-Packed Superfood</h2>
-              <p className="w-80">Tomatoes, scientifically known as Solanum lycopersicum, are one of the most popular and widely cultivated fruits globally. Whether consumed raw, cooked, or as part of sauces, soups, and juices, tomatoes are a staple in kitchens around the world.</p>
+            <Link className="hover:bg-main border border-main text-center px-8 py-2 rounded-full text-xl" href="#signup">Get Started</Link>
 
-              <Link className="text-main font-bold" href="/signup">Read More</Link>
+
+            <div className="flex flex-col gap-4">
+              <p>Basic IOT Session</p>
+              <p>Data analytics</p>
+              <p>Basic security</p>
+              <p>Farm management tools</p>
             </div>
+
           </div>
-          {/*  */}
 
+          <div className=" border-2 bg-white flex flex-col gap-6 px-4 py-4 hover:drop-shadow-2xl rounded-2xl">
+            <h1 className="text-main text-lg">Enterprises</h1>
+            <p>For personal Use and exploration of <br /> AI technoloy </p>
 
-          {/*  */}
-          <div className=" border border-main flex flex-col gap-4 rounded-2xl drop-shadow-2xl">
-            <Image className="rounded-2xl" src="/Scent Leaf.jpg" width={360} height={300} alt="" />
-            <div className=" flex flex-col gap-4 px-4">
-              <h3 className="text-main font-bold">13TH October 2024</h3>
+            <div className="py-9">
+              <Link className="hover:bg-main border border-main text-center px-12 py-2 rounded-full text-xl py-9-" href="#signup">Request Quote</Link>
 
-              <h2 className=" font-semibold">The Importance and Benefits of Scent Leaf: <br /> Nature’s Healing Herb</h2>
-              <p className='w-80'>Scent leaf, scientifically known as Ocimum gratissimum, is a versatile herb that has been used for centuries in various cultures for its culinary, medicinal, and aromatic qualities. Commonly found in tropical and subtropical regions, especially in West Africa</p>
-              <Link className="text-main font-bold" href="/signup">Read More</Link>
             </div>
+
+            <div className="flex flex-col gap-4">
+              <p>Basic IOT Session</p>
+              <p>Data analytics</p>
+              <p>Basic security</p>
+              <p>Farm management tools</p>
+            </div>
+
           </div>
-          {/*  */}
 
         </div>
-        {/* box end */}
-      </div>
-      {/* blog end */}
 
-      <div className="flex justify-between items-center flex-wrap top-80 relative bg-white px-14 py-2  ">
-        <Image className="rounded-2xl" src="/logo.png" width={160} height={100} alt="" />
-        <Link href="#contact" id='contact'>
-          <p>hello@gmail.com</p>
-        </Link>
-        <p>the framers</p>
+        {/* pricing box end */}
       </div>
 
-    </div>
+      {/* pricing end */}
+
+      {/* partner */}
+      <div className="flex flex-col sm:flex-row justify-center gap-8 md:gap-32 items-center py-32">
+        <div>
+          <h1 className="text-sm md:text-xl text-gray-500">Over 30+ <br /> Partners</h1>
+        </div>
+        <div className="flex flex-col gap-4">
+          <h1 className="text-sm md:text-xl text-gray-500">company </h1>
+          {/* <p className="text-6xl text-main">1M+</p> */}
+        </div>
+        <div className="flex flex-col gap-4">
+          <h1 className="text-sm md:text-xl text-gray-500">company </h1>
+        </div>
+        <div className="flex flex-col gap-4">
+          <h1 className="text-sm md:text-xl text-gray-500">company </h1>
+        </div>
+        <div className="flex flex-col gap-4">
+          <h1 className="text-sm md:text-xl text-gray-500">company </h1>
+        </div>
+
+      </div>
+      {/*  partner end*/}
+
+      {/* success */}
+
+      {/* success */}
+      <div className="flex flex-col justify-center items-center gap-10 py-4 md:py-10 bg-backgroundColor ">
+        {/* BOX */}
+        <div className="flex flex-col gap-6 justify-center items-center">
+          <p className="text-xl md:text-6xl text-center font-light">Get all the tools you <br /> need for success
+          </p>
+          <p className="">Join over 300+ partner and customers already growing with FarmTech
+          </p>
+          <Link className="bg-main text-center px-6 py-2 rounded-full text-xl py-9-" href="#signup">Start today</Link>
+
+        </div>
+
+        {/* BOX end*/}
+      </div>
+
+      {/* success end */}
+
+      {/* subscribe */}
+      <div className="flex md:flex-row flex-col items-center- justify-center md:justify-around  py-20">
+        <div className="flex flex-col gap-4">
+          <h1 className="font-semibold- text-3xl ">Subscribe to our <br /> newsletter</h1>
+          <div className="border px-4 py-4 rounded-full ">
+            <input className="border-none" placeholder="enter your email" type="text" />
+            <Link className="bg-main  text-center px-6 py-2 rounded-full text-xl py-9-" href="#signup">Subscribe</Link>
+          </div>
+        </div>
+        <div className="flex flex-col gap-2">
+          <h3 className="font-semibold">Explore</h3>
+          <p className=" text-gray-600">Home</p>
+          <p className=" text-gray-600">Service</p>
+          <p className=" text-gray-600">About us</p>
+          <p className=" text-gray-600">Contact us</p>
+
+        </div>
+        <div className="flex flex-col gap-2">
+          <h1 className="font-semibold">Socials</h1>
+          <p className=" text-gray-600">linkedin</p>
+          <p className=" text-gray-600">instagram</p>
+
+          <p className=" text-gray-600">Twitter</p>
+          <p className=" text-gray-600">Email</p>
+
+        </div>
+        <div className="flex flex-col gap-2">
+          <h3 className="font-semibold">Legal</h3>
+          <p className=" text-gray-600">Term of use</p>
+          <p className=" text-gray-600">Privacy Policy</p>
+        </div>
+
+      </div>
+      {/* subscribe end*/}
+
+      {/* copyright */}
+      <div className="flex flex-col md:flex-row justify-center items-center- lg:justify-between px-4 md:px-20">
+        <p>Copyright 2024 Oxframer All rights reserved </p>
+        <p>Terms and condition</p>
+      </div>
+      {/* copyright end */}
+
+    </main>
   );
 }

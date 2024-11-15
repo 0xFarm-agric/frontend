@@ -52,7 +52,7 @@ export const Navbar = () => {
         <div>
           <p className='text-gray-600 text-[12px]'>Solomon Femi
           </p>
-          <p className='text-[#778599] text-[10px] font'>ayoseunsolomon@hmail.vom
+          <p className='text-[#778599] text-[10px] font'>ayoseunsolomon@gmail.vom
           </p>
         </div>
 
