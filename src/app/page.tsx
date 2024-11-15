@@ -347,7 +347,7 @@ export default function Home() {
           </p>
           <p className="">Join over 300+ partner and customers already growing with FarmTech
           </p>
-          <Link className="bg-main  text-center px-6 py-2 rounded-full text-xl py-9-" href="#signup">Start today</Link>
+          <Link className="bg-main text-center px-6 py-2 rounded-full text-xl py-9-" href="#signup">Start today</Link>
 
         </div>
 
