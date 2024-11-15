@@ -4,27 +4,9 @@
 import React, { useMemo } from 'react';
 import { Facebook, Linkedin, Instagram } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { BlogCardProps, BlogPost, BlogProps } from '@/app/model/blogs';
 
-interface BlogPost {
-  id: number;
-  category: string;
-  date: string;
-  title: string;
-  image: string;
-  description: string;
-}
 
-// Add BlogProps interface
-interface BlogProps {
-  onBlogSelect: (data: BlogPost) => void;
-}
-
-interface BlogCardProps {
-  post: BlogPost;
-  index: number;
-  onSelect: (data: BlogPost) => void;
-}
 
 const BlogCard: React.FC<BlogCardProps> = ({ post, index, onSelect }) => (
   <div className="flex-none w-[250px] bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
@@ -41,12 +23,10 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, index, onSelect }) => (
         {post.category}
       </div>
     </div>
-    
     <div className="p-6">
       <time className="text-gray-500 text-xs mb-2">{post.date}</time>
       <h3 className="text-sm font-semibold mb-3 text-gray-800 line-clamp-2">{post.title}</h3>
       <p className="text-gray-500 text-xs leading-relaxed mb-6 line-clamp-3">{post.description}</p>
-      
       <div className="flex justify-between items-center">
         <div className="flex space-x-3">
           <button className="hover:scale-110 transition-transform" aria-label="Share on Facebook">
@@ -79,7 +59,7 @@ interface RowProps {
 const BlogRow: React.FC<RowProps> = React.memo(({ posts, rowIndex, onSelect }) => (
   <div className="flex space-x-6 overflow-x-auto pb-2 scrollbar-hide">
     {posts.map((post, postIndex) => (
-      <BlogCard 
+      <BlogCard
         key={`${rowIndex}-${postIndex}`}
         post={post}
         index={rowIndex * posts.length + postIndex}
@@ -113,10 +93,10 @@ const Blog: React.FC<BlogProps> = ({ onBlogSelect }) => {
     <div className="container mx-auto px-2 py-4">
       <div className="grid grid-rows-3 gap-6 h-full">
         {rows.map((row, rowIndex) => (
-          <BlogRow 
-            key={rowIndex} 
-            posts={row} 
-            rowIndex={rowIndex} 
+          <BlogRow
+            key={rowIndex}
+            posts={row}
+            rowIndex={rowIndex}
             onSelect={onBlogSelect}
           />
         ))}

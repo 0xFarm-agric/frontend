@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Sidebar } from "../components/sidebar";
 import { Navbar } from "../components/navbar";
 import dynamic from 'next/dynamic';
+import { BlogData } from "../model/blogs";
 
 const VerticalFarms = dynamic(() => import("./verticalFarm"));
 const Portfolio = dynamic(() => import("./portfolio"));
@@ -13,14 +14,7 @@ const Blog = dynamic(() => import("./blog/page"));
 const CrowdFunding = dynamic(() => import("./crowdFunding"));
 const BlogPage = dynamic(() => import("./blog/blogPage"));
 
-interface BlogData {
-  id: number;
-  title: string;
-  date: string;
-  category: string;
-  image: string;
-  description: string;
-}
+
 
 export default function Dashboard() {
     const [selectedScreen, setSelectedScreen] = useState<string>("Portfolio");
