@@ -6,13 +6,13 @@ import { Navbar } from "../components/navbar";
 import dynamic from 'next/dynamic';
 import { BlogData } from "../model/blogs";
 
-const VerticalFarms = dynamic(() => import("./verticalFarm"));
-const Portfolio = dynamic(() => import("./portfolio"));
-const HomeGrown = dynamic(() => import("./homeGrown"));
-const Agents = dynamic(() => import("./agents"));
-const Blog = dynamic(() => import("./blog/page"));
-const CrowdFunding = dynamic(() => import("./crowdFunding"));
-const BlogPage = dynamic(() => import("./blog/blogPage"));
+const VerticalFarms = dynamic(() => import("./verticalFarm"),{ ssr: false });
+const Portfolio = dynamic(() => import("./portfolio"),{ ssr: false });
+const HomeGrown = dynamic(() => import("./homeGrown"),{ ssr: false });
+const Agents = dynamic(() => import("./agents"),{ ssr: false });
+const Blog = dynamic(() => import("./blog/page"),{ ssr: false });
+const CrowdFunding = dynamic(() => import("./crowdFunding"),{ ssr: false });
+const BlogPage = dynamic(() => import("./blog/blogPage"),{ ssr: false });
 
 
 

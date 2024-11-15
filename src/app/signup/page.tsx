@@ -75,7 +75,7 @@ export default function Signup() {
                             {/*  */}
                             {/* <button className="text-white  px-8 py-1 bg-main rounded">Login  </button> */}
                         </form>
-                        <Link className="text-white py-2 bg-main rounded-3xl" href="/dashboard">Register</Link>
+                        <Link className="text-white py-2 bg-main rounded-3xl" href="">Register</Link>
 
 
                     </div>

@@ -52,7 +52,7 @@ export default function Login() {
               {/*  */}
 
             </form>
-            <Link className="text-white text-center  px-4- py-2 bg-main rounded-3xl" href="/dashboard">Login</Link>
+            <Link className="text-white text-center  px-4- py-2 bg-main rounded-3xl" href="">Login</Link>
 
           </div>
         </div>

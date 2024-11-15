@@ -26,7 +26,7 @@ export default function Home() {
           </p>
 
 
-          <a href="/dashboard" className="bg-main text-white px-8 font-thin py-3 rounded-full text-lg">
+          <a href="" className="bg-main text-white px-8 font-thin py-3 rounded-full text-lg">
             Get Started
           </a>
 
@@ -86,7 +86,7 @@ export default function Home() {
 
             <h3 className="font-semibold- text-2xl font-normal">Vertical Farms</h3>
             <p className="w-72 text-[12px] tracking-wide">AI powered food crop farms utilizing web3 for supply-chain, commercialization and investments in urban areas.</p>
-            <Link className="flex items-center gap-4 text-main text-lg" href="/dashboard">Get in Touch <IoIosArrowForward /></Link>
+            <Link className="flex items-center gap-4 text-main text-lg" href="">Get in Touch <IoIosArrowForward /></Link>
           </div>
 
           <div className="bg-white rounded-3xl flex flex-col py-6 px-4 gap-8 w-80 md:w-[340px] h-96">
@@ -103,7 +103,7 @@ export default function Home() {
 
             <h3 className="text-2xl font-normal">Decentralized farming</h3>
             <p className="w-72 text-[12px] tracking-wide">Everyone a farmer, Empowering rural households to turn backyards into high-yield mini-farms 0xFarms provides you with the platform to crowdfund a mini-Farm so you can even go commercial.</p>
-            <Link className="flex items-center gap-4 text-main text-xl" href="/dashboard">Get in Touch <IoIosArrowForward /></Link>
+            <Link className="flex items-center gap-4 text-main text-xl" href="">Get in Touch <IoIosArrowForward /></Link>
           </div>
           <div className="bg-white rounded-3xl flex flex-col py-6 px-4 gap-8 w-80 md:w-[340px] h-96">
           <svg 
@@ -117,7 +117,7 @@ export default function Home() {
 
             <h3 className="font-semibold- text-2xl font-normal">Farmer Hub</h3>
             <p className="w-72 text-[12px] tracking-wide">0xFarms farmer hub provides the X(formerly called Twitter) experience. you can meet ,share and learn farming ideas.</p>
-            <Link className="flex items-center gap-4 text-main text-xl" href="/dashboard">Get in Touch <IoIosArrowForward /></Link>
+            <Link className="flex items-center gap-4 text-main text-xl" href="">Get in Touch <IoIosArrowForward /></Link>
           </div>
         </div>
 
