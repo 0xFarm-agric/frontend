@@ -116,7 +116,7 @@ export default function Home() {
           </svg>
 
             <h3 className="font-semibold- text-2xl font-normal">Farmer Hub</h3>
-            <p className="w-72 text-[12px] tracking-wide">0xFarms's farmer hub provides the X(formerly called Twitter) experience. you can meet ,share and learn farming ideas.</p>
+            <p className="w-72 text-[12px] tracking-wide">0xFarms farmer hub provides the X(formerly called Twitter) experience. you can meet ,share and learn farming ideas.</p>
             <Link className="flex items-center gap-4 text-main text-xl" href="/dashboard">Get in Touch <IoIosArrowForward /></Link>
           </div>
         </div>
