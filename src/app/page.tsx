@@ -20,7 +20,11 @@ export default function Home() {
           <h1 className="text-xl md:text-5xl w-6/12 font-semibold- tracking-wide font-normal">Revolutionizing Framing With <a className="text-main" href="#">Smart Solution</a></h1>
           <p className="w-8/12 sm:w-6/12">Unlocking the potential of modern agriculture by integrating innovation technologies that boost crop productivity, improve sustainability, and empower framers to thrive in an evolving landscape.</p>
 
-          <Link className="bg-main text-white px-8 py-3 rounded-full text-xl" href="#signup">Get Started</Link>
+    
+      <a href="/dashboard" className="bg-main text-white px-8 py-3 rounded-full text-xl">
+        Get Started
+      </a>
+
           <Image src="/headshot.png" width={160} height={100} alt="oxFramer" />
         </div>
 

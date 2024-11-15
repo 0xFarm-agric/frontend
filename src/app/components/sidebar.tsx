@@ -5,7 +5,7 @@ interface SidebarProps {
   setSelectedScreen: (screen: string) => void; // Adjust type based on actual usage
 }
 const Sidebar = ({ setSelectedScreen }: SidebarProps) => {
-  const [selected, setSelected] = useState<string>(""); // Track selected screen
+  const [selected, setSelected] = useState<string>("Portfolio"); // Track selected screen
 
   const handleClick = (screen: string) => {
     setSelected(screen); // Update the selected screen state
