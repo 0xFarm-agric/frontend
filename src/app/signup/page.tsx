@@ -35,7 +35,7 @@ export default function Login() {
 
         <div className='flex flex-col justify-center items-center text-center gap-4'>
           <div className='flex flex-col gap-6'>
-            <h1 className='text-xl md:text-4xl font-semibold'>Welcome to 0xFrams</h1>
+            <h1 className='text-xl md:text-4xl font-semibold'>Welcome to 0xFarms</h1>
             <p> Revolutionizing Agriculture with Vertical and <br /> Decentralized Farming through Real World Assets</p>
           </div>
 
@@ -94,7 +94,7 @@ export default function Login() {
               <Image src="/Google.png" alt={"img"} width={"26"} height={"26"} />
 
             </section>
-            <Link href='/login'>Already Registered, <a className=' text-blue-400' href="#">Login</a>?</Link>
+            <p>Already Registered, <Link className=' text-blue-400' href='/login'>Login</Link>?</p>
 
 
 
