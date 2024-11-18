@@ -212,7 +212,6 @@ export default function BoxTwo() {
 
                     </div>
 
-
                     {/* text box end*/}
 
 

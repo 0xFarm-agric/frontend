@@ -322,7 +322,6 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-4">
           <h1 className="text-sm md:text-xl text-gray-500">company </h1>
-          {/* <p className="text-6xl text-main">1M+</p> */}
         </div>
         <div className="flex flex-col gap-4">
           <h1 className="text-sm md:text-xl text-gray-500">company </h1>
