@@ -58,12 +58,17 @@ export default function Login() {
             </div>
 
 
+
             {/*  */}
 
            
             <Link className="bg-main text-center text-white px-4- py-2 text-sm- rounded-full" href="#signup">Login</Link>
 
             <Link href='/signup'>Create Account <a className=' text-blue-400' href="#">sign up</a>?</Link>
+
+
+            </form>
+            <Link className="text-white text-center  px-4- py-2 bg-main rounded-3xl" href="">Login</Link>
 
 
           </div>

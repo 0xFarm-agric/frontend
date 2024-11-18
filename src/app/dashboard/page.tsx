@@ -1,35 +1,62 @@
 "use client";
 
 import React, { useState } from "react";
-import { Sidebar } from "../components/sidebar"; // Assuming Sidebar is in a separate file
-import { Navbar } from "../components/navbar"; // Assuming Navbar is in a separate file
-import VerticalFarms from "./verticalFarm";
-import Portfolio from "./portfolio";
-import HomeGrown from "./homeGrown";
-import Agents from "./agents";
-import Blog from "./blog";
-import CrowdFunding from "./crowdFunding";
+import { Sidebar } from "../components/sidebar";
+import { Navbar } from "../components/navbar";
+import dynamic from 'next/dynamic';
+import { BlogData } from "../model/blogs";
+
+const VerticalFarms = dynamic(() => import("./verticalFarm"),{ ssr: false });
+const Portfolio = dynamic(() => import("./portfolio"),{ ssr: false });
+const HomeGrown = dynamic(() => import("./homeGrown"),{ ssr: false });
+const Agents = dynamic(() => import("./agents"),{ ssr: false });
+const Blog = dynamic(() => import("./blog/page"),{ ssr: false });
+const CrowdFunding = dynamic(() => import("./crowdFunding"),{ ssr: false });
+const BlogPage = dynamic(() => import("./blog/blogPage"),{ ssr: false });
 
 
-export default function Dashboard () {
-    const [selectedScreen, setSelectedScreen] = useState("home"); // Default screen
+
+export default function Dashboard() {
+    const [selectedScreen, setSelectedScreen] = useState<string>("Portfolio");
+    const [blogData, setBlogData] = useState<BlogData | null>(null);
+
+    const handleBackToBlog = () => {
+        setSelectedScreen("Blog");
+        setBlogData(null);
+    };
+
+    const screenComponents = {
+        Portfolio: <Portfolio />,
+        VerticalFarms: <VerticalFarms />,
+        HomeGrown: <HomeGrown />,
+        CrowdFunding: <CrowdFunding />,
+        Blog: (
+            <Blog 
+                onBlogSelect={(data: BlogData) => {
+                    setBlogData(data);
+                    setSelectedScreen("BlogPage");
+                }}
+            />
+        ),
+        BlogPage: blogData ? (
+            <BlogPage 
+                blog={blogData} 
+                onBack={handleBackToBlog}
+            />
+        ) : null,
+        Agents: <Agents />,
+        home: null,
+    };
 
     return (
-        <div className="flex">
+        <div className="flex h-screen overflow-hidden">
             <Sidebar setSelectedScreen={setSelectedScreen} />
-            <div className="flex-1">
+            <div className="flex-1 flex flex-col overflow-hidden">
                 <Navbar />
-                <div className="p-4">
-                    {/* Render content based on selectedScreen */}
-                    {selectedScreen === "Portfolio" && <Portfolio/>}
-                    {selectedScreen === "VerticalFarms" && <VerticalFarms/>}
-                    {selectedScreen === "HomeGrown" && <HomeGrown/>}
-                    {selectedScreen === "CrowdFunding" && <CrowdFunding/>}
-                    {selectedScreen === "Blog" && <Blog/>}
-                    {selectedScreen === "Agents" && <Agents/>}
+                <div className="p-4 flex-1 overflow-auto">
+                    {screenComponents[selectedScreen as keyof typeof screenComponents]}
                 </div>
             </div>
         </div>
     );
-};
-
+}
