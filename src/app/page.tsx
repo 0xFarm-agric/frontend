@@ -326,7 +326,6 @@ export default function Home() {
         {/* pricing box end */}
       </div>
 
-    
 
       {/* success */}
 
