@@ -73,7 +73,7 @@ export default function Login() {
               <Image src="/Google.png" alt={"img"} width={"24"} height={"26"} />
 
             </section>
-            <p className='text-gray-600 font-thin text-sm'>Don't have an account? <Link className=' text-blue-400 text-sm font-semibold' href='/signup'>sign up</Link></p>
+            <p className='text-gray-600 font-thin text-sm'>No account? <Link className=' text-blue-400 text-sm font-semibold' href='/signup'>sign up</Link></p>
 
           </div>
         </div>

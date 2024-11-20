@@ -11,7 +11,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 
 
-export default function Login() {
+export default function Register() {
   return (
 
     <main  className='bg-backgroundColor'>
@@ -86,7 +86,7 @@ export default function Login() {
             {/*  */}
 
 
-            <Link className="bg-main text-center text-white px-4- py-2 text-sm- rounded-full" href="#signup">Create Account</Link>
+            <Link className="bg-main text-center text-white px-4- py-2 text-sm- rounded-full" href="dashboard">Create Account</Link>
             <p>or</p>
             <section className="flex justify-center gap-4">
               <Image src="/Twitter.png" alt={"img"} width={"26"} height={"26"} />
@@ -94,7 +94,7 @@ export default function Login() {
               <Image src="/Google.png" alt={"img"} width={"26"} height={"26"} />
 
             </section>
-            <p>Already Registered, <Link className=' text-blue-400' href='/login'>Login</Link>?</p>
+            <p>Already have an account?, <Link className=' text-blue-400' href='/login'>Login</Link>?</p>
 
 
 
