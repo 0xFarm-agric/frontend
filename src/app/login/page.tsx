@@ -12,6 +12,10 @@ export default function Login() {
   return (
 
     <main className='bg-backgroundColor'>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+          rel="stylesheet"
+        />
       <div className='flex flex-col md:flex-row justify-between items-center px-20 py-4'>
         <div>
           <Image src="/logo.png" width={160} height={100} alt="oxFramer" />
@@ -32,8 +36,8 @@ export default function Login() {
 
         <div className='flex flex-col justify-center items-center text-center gap-6'>
           <div className='flex flex-col gap-4'>
-            <h1 className='text-xl md:text-4xl font-semibold'>Welcome to 0xFarms</h1>
-            <p className='font-thin text-gray-500'> Revolutionizing Agriculture with Vertical and <br /> Decentralized Farming through Real World Assets</p>
+            <h1 className='text-xl md:text-4xl font-medium'>Welcome to 0xFarms</h1>
+            <p className='font-thin text-gray-400 text-sm'> Revolutionizing Agriculture with Vertical and <br /> Decentralized Farming through Real World Assets</p>
           </div>
 
 

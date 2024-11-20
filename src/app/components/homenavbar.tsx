@@ -48,7 +48,7 @@ export default function Home() {
 
       {/* Get Started Button for Desktop */}
       <div className="hidden md:block">
-        <Link className="bg-main text-white px-5 py-2 rounded-3xl text-[12px]" href="#signup">Get Started</Link>
+        <Link className="bg-main text-white px-5 py-2 rounded-3xl text-[12px]" href="signup">Get Started</Link>
       </div>
     </nav>
 

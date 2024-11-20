@@ -29,6 +29,10 @@ export default function Home() {
   ];
   return (
     <main>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+          rel="stylesheet"
+        />
       <Homenav />
 
       {/* HERO */}
@@ -50,7 +54,7 @@ export default function Home() {
           </p>
 
 
-          <a href="" className="bg-main text-white px-8 font-thin py-3 rounded-full text-lg">
+          <a href="login" className="bg-main text-white px-8 font-thin py-3 rounded-full text-lg">
             Get Started
           </a>
 
