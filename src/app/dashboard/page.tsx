@@ -5,7 +5,6 @@ import { Sidebar } from "../components/sidebar";
 import { Navbar } from "../components/navbar";
 import dynamic from 'next/dynamic';
 import { BlogData } from "../model/blogs";
-import { useWallet } from '../hooks/useWallet'; // Import your custom hook
 const VerticalFarms = dynamic(() => import("./verticalFarm"), { ssr: false });
 const Portfolio = dynamic(() => import("./portfolio"), { ssr: false });
 const HomeGrown = dynamic(() => import("./homeGrown"), { ssr: false });
@@ -17,8 +16,7 @@ const BlogPage = dynamic(() => import("./blog/blogPage"), { ssr: false });
 
 
 export default function Dashboard() {
-    const { walletAddress, networkError, ensName, connectWallet } = useWallet(); // Use the custom hook
-    const [selectedScreen, setSelectedScreen] = useState<string>("Portfolio");
+      const [selectedScreen, setSelectedScreen] = useState<string>("Portfolio");
     const [blogData, setBlogData] = useState<BlogData | null>(null);
 
     const handleBackToBlog = () => {

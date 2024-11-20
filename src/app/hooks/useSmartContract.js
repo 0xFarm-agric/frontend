@@ -1,7 +1,7 @@
 // hooks/useSmartContract.js
 import { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
-import abi from '../assets/abi';
+import abi from '../../../public/abi';
 
 const useSmartContract = (contractAddress) => {
     const [contract, setContract] = useState(null);
@@ -20,7 +20,7 @@ const useSmartContract = (contractAddress) => {
         };
 
         loadContract();
-    }, [contractAddress, abi]);
+    }, [contractAddress]);
 
     const register = async (data) => {
         try {

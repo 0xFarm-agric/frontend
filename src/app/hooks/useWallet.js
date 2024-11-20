@@ -1,17 +1,17 @@
 // hooks/useWallet.js
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 
 
 
-const TARGET_CHAIN_ID = '0x14a34';
+
 const PROD_TARGET_CHAIN_ID = '0x2105';
 
 export const useWallet = () => {
     
     const [walletAddress, setWalletAddress] = useState('');
     const [networkError, setNetworkError] = useState('');
-    const [ensName, setEnsName] = useState('');
+    
 
     const connectWallet = async () => {
         if (typeof window.ethereum !== 'undefined') {

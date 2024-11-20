@@ -3,7 +3,7 @@
 import { useWallet } from '../hooks/useWallet'; // Import your custom hook
 
 export const Navbar = () => {
-  const { walletAddress, networkError, connectWallet } = useWallet(); // Use the custom hook
+  const { walletAddress, connectWallet } = useWallet(); // Use the custom hook
 
   return (
     <div className="bg-[#FFFFFF]  text-white  px-6 flex justify-between items-center">
