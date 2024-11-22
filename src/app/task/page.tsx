@@ -1,8 +1,8 @@
 "use client";
-import Image from 'next/image'
 import React from "react";
 import ReactApexChart from "react-apexcharts";
 import { ApexOptions } from "apexcharts"; // Import ApexOptions type
+// import Table from "../components/tasks"
 
 export default function Portfolio() {
     const data = {
@@ -107,23 +107,23 @@ export default function Portfolio() {
     return (
 
 
-        <div className="flex flex-col gap-8">
-            <div className="px-10 ">
-                <p className="text-3xl md:text-sm font-semibold mb-1">Good Morning !</p>
+        <div>
+            <div className="">
+                <p className="text-sm font-semibold mb-1">Good Morning !</p>
                 <p className="text-[#778599] text-xs">All your 0xFarm activities displayed here</p>
             </div>
-            <div className="flex justify-spacebetween- justify-around my-4">
+            <div className="flex justify-spacebetween my-4">
                 {/* Row container for the 2 cards in a row */}
-                <div className="flex space-x-4- gap-16">
+                <div className="flex space-x-4">
                     {/* First card */}
-                    <div className="w-64- w-80  h-40 bg-white rounded-lg shadow-md">
+                    <div className="w-64  h-40 bg-white rounded-lg shadow-md">
                         <div className="w-[100px] h-6 mx-4 mt-4 mb-2 px-4 items-center bg-[#15A34A] flex rounded-[4px]">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.0038 11.73C12.4485 11.73 12.8285 11.5717 13.1438 11.255C13.4591 10.9383 13.6165 10.5573 13.6158 10.112C13.6151 9.66667 13.4565 9.28667 13.1398 8.972C12.8231 8.65733 12.4421 8.5 11.9968 8.5C11.5515 8.5 11.1715 8.65867 10.8568 8.976C10.5421 9.29333 10.3848 9.67433 10.3848 10.119C10.3848 10.5637 10.5431 10.9437 10.8598 11.259C11.1765 11.5743 11.5578 11.7317 12.0038 11.731M11.9998 21.019C9.64981 18.941 7.87981 17.003 6.68981 15.205C5.49914 13.407 4.90381 11.7707 4.90381 10.296C4.90381 8.18067 5.59248 6.436 6.96981 5.062C8.34781 3.68733 10.0245 3 11.9998 3C13.9751 3 15.6518 3.68733 17.0298 5.062C18.4071 6.436 19.0958 8.18067 19.0958 10.296C19.0958 11.7707 18.5008 13.407 17.3108 15.205C16.1201 17.003 14.3498 18.941 11.9998 21.019Z" fill="white" />
                             </svg>
                             <span className="ml-2 text-xs text-white">Lagos</span>
                         </div>
-                        <div className="flex   justify-between items-center ">
+                        <div className="flex  justify-between items-center ">
                             {/*First Row: Date and Icon */}
                             <div className="flex flex-col  px-4">
                                 <div className="flex items-center mb-2">
@@ -159,7 +159,7 @@ export default function Portfolio() {
 
 
                     {/* Second card */}
-                    <div className="w-64- w-80 h-40 px-2 bg-white rounded-lg shadow-md">
+                    <div className="w-64 h-40 px-2 bg-white rounded-lg shadow-md">
                         <h2 className="text-xs font-medium ">Production Overview</h2>
                         <ReactApexChart options={radial.options} series={radial.series} type="radialBar" height={150} />
                     </div>
@@ -183,150 +183,19 @@ export default function Portfolio() {
                 </div>
             </div>
 
-            <div className="flex space-x-4-">
+            <div className="flex space-x-4">
                 <div className="w-1/3 h-45 mx-auto  bg-white rounded-lg shadow-lg">
 
                     <p className="text-[#000] text-xs px-4 pt-4">Monthly Yield Analysis</p>
                     <ReactApexChart options={data.options} series={data.series} type="area" height={200} />
                 </div>
-                <div className="w-1/3 h-45- h-12 mx-auto  bg-white rounded-lg shadow-lg">
-                    {/* img end */}
-
-                    {/* <div className="rounded-2xl"> */}
-                    <Image className="rounded-2xl" src="/strawberry-field.jpg" width={500} height={500} />
-                                        
-                    {/* </div> */}
-
-                    {/* img end */}
-                    <div className=" bottom-28 relative px-1">
-                        <div className="bg-white shadow-lg px-1 py-1 rounded-2xl">
-                            <div className="flex justify-between ">
-                                <p>Corn Field</p>
-                                <p>Corn Field</p>
-                            </div>
-
-                            {/* content */}
-                            <div className="flex justify-evenly gap-2-">
-                                <div className="flex flex-col border border-main px-3 py-1 rounded-lg">
-                                    <p className="">Corn Field</p>
-                                    <p>Corn </p>
-                                </div>
-                                <div className="flex flex-col border border-main px-3 py-1 rounded-lg">
-                                    <p>Corn Field</p>
-                                    <p>Corn Field</p>
-                                </div>
-                                <div className="flex flex-col border border-main px-3 py-1 rounded-lg">
-                                    <p>Corn Field</p>
-                                    <p>Corn Field</p>
-                                </div>
-
-                            </div>
-                            {/* content enf */}
-                        </div>
-                    </div>
+                <div className="w-1/3 h-45 mx-auto  bg-white rounded-lg shadow-lg">
+                <img src="img.png" alt="" />
                 </div>
-                {/* box to ended */}
-
             </div>
+           
 
 
-            {/* table */}
-            <div className="top-10 relative">
-                {/*  */}
-                <div className="flex justify-around bg-white rounded-lg shadow-lg  ">
-
-                    <div>
-                        <div className="flex  justify-between shadow-lg bg-white gap-20 py-2 px-2">
-                            <h1>Task Management</h1>
-                            <div className="flex gap-4">
-                                <button className="bg-main rounded px-2 ">Add new task</button>
-                                <p className="border rounded-xl px-1 py-1">View all</p>
-                            </div>
-
-                        </div>
-                        {/* table */}
-                        <table className="table-auto w-full border-collapse border border-gray-200">
-                            {/* Table Header */}
-                            <thead className="bg-gray-100">
-                                <tr className="border-b border-gray-300">
-                                    <th className="text-left px-4 py-2">Task Name</th>
-                                    <th className="text-left px-4 py-2">Assigned to</th>
-                                    <th className="text-left px-4 py-2">Due Date</th>
-                                    <th className="text-left px-4 py-2">Status</th>
-                                </tr>
-                            </thead>
-
-                            {/* Table Body */}
-                            <tbody>
-                                <tr className="border-b border-gray-200">
-                                    <td className="px-4 py-2">Apply fertilizer to corn</td>
-                                    <td className="px-4 py-2">Ayo Ayo</td>
-                                    <td className="px-4 py-2">22 Aug</td>
-                                    <td className="px-4 py-2">Pending</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="px-4 py-2">Weed the farm</td>
-                                    <td className="px-4 py-2">Musa</td>
-                                    <td className="px-4 py-2">23 Aug</td>
-                                    <td className="px-4 py-2">Completed</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="px-4 py-2">Harvest rice</td>
-                                    <td className="px-4 py-2">Chinedu</td>
-                                    <td className="px-4 py-2">25 Aug</td>
-                                    <td className="px-4 py-2">In Progress</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="px-4 py-2">Inspect irrigation system</td>
-                                    <td className="px-4 py-2">Jane</td>
-                                    <td className="px-4 py-2">26 Aug</td>
-                                    <td className="px-4 py-2">Pending</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-
-
-                        {/* table */}
-
-                    </div>
-
-                    {/*  */}
-                    {/* <div className="flex shadow-lg bg-white gap-20">
-                    <h1>Task Management</h1>
-                    <div className="flex gap-4">
-                    <button className="bg-main rounded px-2 ">Add new task</button>
-                    <p className="border rounded-xl px-1 py-1">View all</p>
-                    </div>
-                </div> */}
-                    {/*  */}
-                    <div className="flex flex-col gap-6 bg-white rounded-lg shadow-lg w-2/6 px-2">
-                        <h1>Vegatable Havert Summary</h1>
-                        <div className="flex justify-between">
-                            <p>Tomatoes</p>
-                            <p>240 Tons</p>
-                        </div>
-                        <p className="border border-main"></p>
-                        <div className="flex justify-between">
-                            <p>Tomatoes</p>
-                            <p>240 Tons</p>
-                        </div>
-                        <p className="border border-main"></p>
-
-                        <div className="flex justify-between">
-                            <p>Tomatoes</p>
-                            <p>240 Tons</p>
-                        </div>
-                    </div>
-                </div>
-
-                {/*  */}
-
-
-
-
-            </div>
-            {/* table ends */}
         </div >
     );
 }
