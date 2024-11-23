@@ -193,7 +193,7 @@ export default function Portfolio() {
                     {/* img end */}
 
                     {/* <div className="rounded-2xl"> */}
-                    <Image className="rounded-2xl" src="/strawberry-field.jpg" width={500} height={500} />
+                    <Image alt='' className="rounded-2xl" src="/strawberry-field.jpg" width={500} height={500} />
                                         
                     {/* </div> */}
 
