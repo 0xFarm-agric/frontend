@@ -69,15 +69,15 @@ export default function Home() {
       {/* images end */}
       <div className="flex flex-col md:flex-row justify-center items-center gap-8">
         <div>
-          <Image src="/dashboard.png" width={440} height={200} alt="oxFramer" />
+          <Image src="/dashboard.png" width={500} height={400} alt="oxFramer" />
         </div>
 
         <div>
-          <Image src="/hm.jpeg" width={260} height={100} alt="oxFramer" />
+          <Image src="/hm.jpeg" width={350} height={200} alt="oxFramer" />
         </div>
 
         <div>
-          <Image sizes="23" src="/pure.jpg" width={260} height={200} alt="oxFramer" />
+          <Image sizes="23" src="/pure.jpg" width={360} height={200} alt="oxFramer" />
         </div>
       </div>
       {/* images end */}
