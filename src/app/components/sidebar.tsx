@@ -19,7 +19,7 @@ const Sidebar = ({ setSelectedScreen }: SidebarProps) => {
   };
 
   return (
-    <div className="bg-[#FFFFFF]  text-white h-screen w-[130px] flex flex-col justify-between py-2 ">
+    <div className="bg-[#FFFFFF]  text-white h-screen w-[160px] flex flex-col justify-between py-2 pl-2">
       <div className="flex flex-col items-center space-y-8 mt-4">
         <Image width={300} height={100} alt='' src={"/logo.png"} />
         <div className="flex w-full ml-4 space-x-2 items-center justify-start">
@@ -35,20 +35,7 @@ const Sidebar = ({ setSelectedScreen }: SidebarProps) => {
           </a>
           <p onClick={() => handleClick("Portfolio")} className='cursor-pointer text-[10px] text-gray-400'>Portfolio</p>
         </div>
-        <div className="flex w-full ml-4 space-x-2 items-center justify-start">
-          <a
-            href="#"
-            onClick={() => handleClick("Blog")}
-            className={getLinkClasses("Blog")}
-          >
-            {/* Settings Icon */}
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-              <path strokeWidth={1} strokeLinecap="round" strokeLinejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
-            </svg>
-
-          </a>
-          <p onClick={() => handleClick("Blog")} className='cursor-pointer text-[10px] text-gray-400'>Blog</p>
-        </div>
+        {/*Vertical farm*/}
         <div className="flex w-full ml-4 space-x-2 items-center justify-start">
           <a
             href="#"
@@ -66,22 +53,7 @@ const Sidebar = ({ setSelectedScreen }: SidebarProps) => {
           </a>
           <p onClick={() => handleClick("VerticalFarms")} className='cursor-pointer text-[10px] text-gray-400'>Vertical Farms</p>
         </div>
-        <div className="flex w-full ml-4 space-x-2 items-center justify-start">
-          <a
-            href="#"
-            onClick={() => handleClick("CrowdFunding")}
-            className={getLinkClasses("CrowdFunding")}
-          >
-            <svg width="24" height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              strokeWidth={0.5} stroke="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M12.9248 11.05L9.38581 7.51105L10.0998 6.82305L12.9248 9.64805L18.5998 3.99805L19.2888 4.68605L12.9248 11.05ZM6.40381 18.654L13.9688 20.861L19.9578 19.011C19.9378 18.7077 19.8458 18.489 19.6818 18.355C19.5165 18.221 19.3338 18.154 19.1338 18.154H14.3918C13.9678 18.154 13.5841 18.1374 13.2408 18.104C12.8968 18.0707 12.5448 17.9914 12.1848 17.866L9.99481 17.148L10.3328 16.16L12.3578 16.892C12.6798 17.014 13.0451 17.0874 13.4538 17.112C13.8625 17.136 14.4225 17.15 15.1338 17.154C15.1338 16.842 15.0768 16.59 14.9628 16.398C14.8488 16.206 14.6841 16.072 14.4688 15.996L8.71581 13.884C8.67714 13.8714 8.64181 13.862 8.60981 13.856C8.57781 13.85 8.54247 13.8467 8.50381 13.846H6.40381V18.654ZM2.40381 21V12.846H8.48381C8.57514 12.846 8.66948 12.8554 8.76681 12.874C8.86481 12.8927 8.95714 12.9187 9.04381 12.952L14.8228 15.069C15.1808 15.205 15.4888 15.4494 15.7468 15.802C16.0055 16.1547 16.1348 16.6054 16.1348 17.154H19.1348C19.7368 17.154 20.1981 17.3424 20.5188 17.719C20.8395 18.0964 20.9998 18.5747 20.9998 19.154V19.769L14.0198 21.923L6.40381 19.703V21H2.40381ZM3.40381 20H5.40381V13.846H3.40381V20Z" fill="black" />
-            </svg>
-          </a>
-          <p onClick={() => handleClick("CrowdFunding")} className='cursor-pointer text-[10px] text-gray-400'>Crowd Funding</p>
-        </div>
+         {/*Homegrown farms*/}
         <div className="flex w-full ml-4 space-x-2 items-center justify-start">
           <a
             href="#"
@@ -101,7 +73,40 @@ const Sidebar = ({ setSelectedScreen }: SidebarProps) => {
           </a>
           <p onClick={() => handleClick("HomeGrown")} className='cursor-pointer text-[10px] text-gray-400'>Home Farm</p>
         </div>
+        {/*Blog*/}
+        <div className="flex w-full ml-4 space-x-2 items-center justify-start">
+          <a
+            href="#"
+            onClick={() => handleClick("Blog")}
+            className={getLinkClasses("Blog")}
+          >
+            {/* Settings Icon */}
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+              <path strokeWidth={1} strokeLinecap="round" strokeLinejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
+            </svg>
 
+          </a>
+          <p onClick={() => handleClick("Blog")} className='cursor-pointer text-[10px] text-gray-400'>Blog</p>
+        </div>
+        {/*Crowd Funding*/}
+        <div className="flex w-full ml-4 space-x-2 items-center justify-start">
+          <a
+            href="#"
+            onClick={() => handleClick("CrowdFunding")}
+            className={getLinkClasses("CrowdFunding")}
+          >
+            <svg width="24" height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              strokeWidth={0.5} stroke="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.9248 11.05L9.38581 7.51105L10.0998 6.82305L12.9248 9.64805L18.5998 3.99805L19.2888 4.68605L12.9248 11.05ZM6.40381 18.654L13.9688 20.861L19.9578 19.011C19.9378 18.7077 19.8458 18.489 19.6818 18.355C19.5165 18.221 19.3338 18.154 19.1338 18.154H14.3918C13.9678 18.154 13.5841 18.1374 13.2408 18.104C12.8968 18.0707 12.5448 17.9914 12.1848 17.866L9.99481 17.148L10.3328 16.16L12.3578 16.892C12.6798 17.014 13.0451 17.0874 13.4538 17.112C13.8625 17.136 14.4225 17.15 15.1338 17.154C15.1338 16.842 15.0768 16.59 14.9628 16.398C14.8488 16.206 14.6841 16.072 14.4688 15.996L8.71581 13.884C8.67714 13.8714 8.64181 13.862 8.60981 13.856C8.57781 13.85 8.54247 13.8467 8.50381 13.846H6.40381V18.654ZM2.40381 21V12.846H8.48381C8.57514 12.846 8.66948 12.8554 8.76681 12.874C8.86481 12.8927 8.95714 12.9187 9.04381 12.952L14.8228 15.069C15.1808 15.205 15.4888 15.4494 15.7468 15.802C16.0055 16.1547 16.1348 16.6054 16.1348 17.154H19.1348C19.7368 17.154 20.1981 17.3424 20.5188 17.719C20.8395 18.0964 20.9998 18.5747 20.9998 19.154V19.769L14.0198 21.923L6.40381 19.703V21H2.40381ZM3.40381 20H5.40381V13.846H3.40381V20Z" fill="black" />
+            </svg>
+          </a>
+          <p onClick={() => handleClick("CrowdFunding")} className='cursor-pointer text-[10px] text-gray-400'>Crowd Funding</p>
+        </div>
+
+        {/*Agents*/}
         <div className="flex w-full ml-4 space-x-2 items-center justify-start">
           <a
             href="#"

@@ -3,7 +3,7 @@
     "use client";
 
 import React, { useState } from 'react';
-import { Edit, FileText, Target, Flag, Clock, File } from 'lucide-react';
+import { Edit, FileText, Target, Flag, Clock } from 'lucide-react';
 
 const TabButton = ({ active, icon: Icon, label, onClick }) => (
     <button
@@ -36,10 +36,10 @@ const CampaignCard = ({
             <div className="relative">
                 <video
                     src={video}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-contain"
                     controls
                     poster="/api/placeholder/400/300"
-                    preload="none"
+             
                 >
                     Your browser does not support the video tag.
                 </video>
@@ -104,7 +104,7 @@ export default function HomeGrown() {
             daysLeft: 74,
             supporters: '22K',
             video: '/homefarm.mp4',
-            title: 'Construction of the Ar-Rahmat Mosque in North Gambia',
+            title: 'Yam farm',
             raised: 150512,
             goal: 200000,
             percentComplete: 75,
@@ -116,7 +116,7 @@ export default function HomeGrown() {
             daysLeft: 6,
             supporters: '40K',
             video: '/homefarm.mp4',
-            title: 'Building a Decent School for Children in Cellevon Village',
+            title: 'Tomato Garden',
             raised: 252215,
             goal: 250000,
             percentComplete: 100,
@@ -128,7 +128,7 @@ export default function HomeGrown() {
             daysLeft: 23,
             supporters: '10K',
             video: '/homefarm.mp4',
-            title: 'Help Steven Conor Fight to Survive Liver Cancer',
+            title: 'Potatoes farm',
             raised: 80212,
             goal: 100000,
             percentComplete: 80,
@@ -140,7 +140,7 @@ export default function HomeGrown() {
             daysLeft: 0,
             supporters: '3K',
             video: '/homefarm.mp4',
-            title: 'Give Clean Water To Developing Communities',
+            title: 'Onions Plantation',
             raised: 5212,
             goal: 48000,
             percentComplete: 17,
@@ -163,11 +163,11 @@ export default function HomeGrown() {
     ];
 
     const tabs = [
-        { id: 'all', label: 'All Campaigns', icon: FileText },
+        { id: 'all', label: 'All Home farms', icon: FileText },
         { id: 'completed', label: 'Goal Reached', icon: Target },
         { id: 'active', label: 'Goal Unreached', icon: Flag },
         { id: 'closed', label: 'Closed', icon: Clock },
-        { id: 'draft', label: 'Draft', icon: File }
+     
     ];
 
     const filteredCampaigns = campaigns.filter(campaign => {

@@ -6,7 +6,7 @@ import { Navbar } from "../components/navbar";
 import dynamic from 'next/dynamic';
 import { BlogData } from "../model/blogs";
 const VerticalFarms = dynamic(() => import("./verticalFarm"), { ssr: false });
-const Portfolio = dynamic(() => import("./portfolio"), { ssr: false });
+const Portfolio = dynamic(() => import("./portfolio/page"), { ssr: false });
 const HomeGrown = dynamic(() => import("./homeGrown"), { ssr: false });
 const Agents = dynamic(() => import("./agents"), { ssr: false });
 const Blog = dynamic(() => import("./blog/page"), { ssr: false });
