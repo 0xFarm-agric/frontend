@@ -218,8 +218,8 @@ export default function Home() {
           <div className="rounded-3xl flex flex-col items-start py-6 px-4 gap-8 w-80 md:w-[500px] h-80">
             <p className="flex justify-center items-center border-[1px] rounded-full px-4 py-2 text-sm">Mission</p>
 
-            <h3 className="font-semibold- text-2xl font-normal">Eradicate Poverty through Agric</h3>
-            <p className="w-72- text-lg font-thin tracking-wide text-gray-600">Save water and optimize growth with automated irrigation solutions. This helps in improving long-term profits and growth.</p>
+            <h3 className="font-semibold- text-2xl font-normal">Eradicate Poverty through Modernized Agric</h3>
+            <p className="w-72- text-lg font-thin tracking-wide text-gray-600">Awaken and strengthen the worlds oldest proffesion while creating equal opportunity to create wealth, increase employeability and introduce the next generation agriculture</p>
             <Link className="bg-main flex gap-4 items-center text-white px-6 py-3 font-thin rounded-full text-lg" href="#signup">Get Started<IoIosArrowForward /></Link>
 
           </div>
@@ -239,7 +239,7 @@ export default function Home() {
             <p className="flex justify-center items-center border-[1px] rounded-full px-4 py-2 text-sm">Vision</p>
 
             <h3 className="font-semibold- text-2xl font-normal">World Farming</h3>
-            <p className="w-72- text-lg font-thin tracking-wide text-gray-600">Save water and optimize growth with automated irrigation solutions. This helps in improving long-term profits and growth.</p>
+            <p className="w-72- text-lg font-thin tracking-wide text-gray-600">Ensure every household is fed with not just food but agricultural knowlegde that span into the future</p>
             <Link className="bg-main flex gap-4 items-center text-white px-6 py-3 font-thin rounded-full text-lg" href="#signup">Get Started <IoIosArrowForward /></Link>
 
           </div>
