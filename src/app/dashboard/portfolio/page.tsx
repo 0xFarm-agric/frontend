@@ -1,22 +1,19 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import ReactApexChart from "react-apexcharts";
+import React from "react";
+
 import { ApexOptions } from "apexcharts"; // Import ApexOptions type
-import { ChevronDown, ChevronRight,Plus } from 'lucide-react';
+import dynamic from "next/dynamic";
+import { FieldCard } from "./fieldCard";
+import { TaskManagement } from "./taskManagement";
+import { HarvestSummary } from "./summary";
+
+// Dynamically import ApexCharts with no SSR
+const ReactApexChart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
 
+const Portfolio = () => {
 
-
-
-const Portfolio=()=> {
-    const [windowWidth, setWindowWidth] = useState(0) // Example state
-
-    useEffect(() => {
-      // This code only runs in the browser
-      setWindowWidth(window.innerWidth)
-      // Add any other window-dependent code here
-    }, [windowWidth]);
     const data = {
         series: [
             {
@@ -119,7 +116,6 @@ const Portfolio=()=> {
 
     return (
 
-
         <div className="flex flex-col gap-8 bg-gray-50 px-8 py-4">
             <div className="">
                 <p className="text-3xl md:text-lg font-semibold mb-1">Good Morning !</p>
@@ -180,7 +176,7 @@ const Portfolio=()=> {
 
                 {/* Third card */}
                 <div className="flex flex-col space-y-2 w-1/3">
-                   
+
                     <div className="w-64 p-4 bg-white rounded-lg shadow-md">
                         <div className="flex  justify-between items-center ">
                             <h2 className="text-[14px] font-medium mb-4">Total Vertical Farm area</h2>
@@ -196,9 +192,6 @@ const Portfolio=()=> {
                 </div>
             </div>
 
-
-
-
             <div className="flex space-x-8">
                 {/* Graph */}
                 <div className="w-4/5 h-45 mx-auto  bg-white rounded-lg shadow-lg">
@@ -212,29 +205,16 @@ const Portfolio=()=> {
                 {/* Field Card end*/}
 
             </div>
+            <div className="flex justify-around gap-8">
+                {/* Task Management */}
+                <TaskManagement />
 
+                {/* Task Management end */}
 
-
-           
-
-                <div className="flex justify-around gap-8">
-                    {/* Task Management */}
-                    <TaskManagement />
-
-                    {/* Task Management end */}
-
-                    {/* Harvest Summary */}
-                    <HarvestSummary />
-                    {/* Harvest Summary end */}
-                </div>
-
-
-
-
-
-
-        
-
+                {/* Harvest Summary */}
+                <HarvestSummary />
+                {/* Harvest Summary end */}
+            </div>
         </div >
     );
 }
@@ -242,232 +222,8 @@ const Portfolio=()=> {
 
 
 
- const TaskManagement = () => {
-    const tasks = [
-      {
-        name: 'Apply Fertilizer to Corn',
-        assignedTo: 'Bisi Olaide',
-        dueDate: '29-Aug-24',
-        status: 'Pending'
-      },
-      {
-        name: 'Harvest Wheat',
-        assignedTo: 'Micheal John',
-        dueDate: '02-Sep-24',
-        status: 'In Progress'
-      }
-    ];
-  
-    return (
-      <div className="w-full mt-6 shadow-md rounded-xl p-8">
-        <div className="flex flex-row items-center justify-between mb-4">
-          <p className='text-sm text-black font-semibold'>Farm Task</p>
-          <div className="flex items-center gap-4">
-            <button className="flex items-center px-4 py-2 text-[10px] text-white bg-green-500 rounded-lg">
-            Add New Task
-              <Plus className="w-4 h-4 mr-2" />
-        
-            </button>
-            <button className="flex border px-4 py-2 rounded-lg items-center font-medium text-gray-600 text-[12px]">
-              View All
-              <ChevronRight className="w-4 h-4 ml-1" />
-            </button>
-          </div>
-        </div>
-        <div>
-          <div className="w-full">
-            <table className="w-full">
-              <thead>
-                <tr className="text-left text-gray-500 text-sm ">
-                  <th className="py-2 font-thin">Task Name</th>
-                  <th className="py-2 font-thin">Assigned To</th>
-                  <th className="py-2 font-thin">Due Date</th>
-                  <th className="py-2 font-thin">Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                {tasks.map((task, index) => (
-                  <tr key={index} className="border-t">
-                    <td className="py-4 text-xs">{task.name}</td>
-                    <td className="py-4 text-xs">{task.assignedTo}</td>
-                    <td className="py-4 text-xs">{task.dueDate}</td>
-                    <td className="py-4 text-xs">
-                      <span className={`px-3 py-1 rounded-full text-sm ${
-                        task.status === 'Pending' ? 'bg-yellow-100 text-yellow-800' : 'bg-blue-100 text-blue-800'
-                      }`}>
-                        {task.status}
-                      </span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    );
-  };
-const HarvestSummary = () => {
-    const harvests = [
-      { name: 'Tomatoes', amount: '150 tons' },
-      { name: 'Carrots', amount: '120 tons' },
-      { name: 'Corn', amount: '200 tons' }
-    ];
-  
-    return (
-      <div className="w-full mt-6 rounded-lg shadow-lg p-8">
-        <p className='text-sm font-semibold mb-4'>Vegetable Harvest Summary</p>
-  
-        <div>
-          <div className="divide-y divide-gray-200">
-            {harvests.map((harvest, index) => (
-              <div key={index}>
-                <div className="flex items-center justify-between py-3">
-                  <div className="flex items-center">
-                    <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                      index === 0 ? 'bg-red-100' :
-                      index === 1 ? 'bg-orange-100' : 'bg-green-100'
-                    }`}>
-                      {index === 0 && <span className="text-red-600">🍅</span>}
-                      {index === 1 && <span className="text-orange-600">🥕</span>}
-                      {index === 2 && <span className="text-green-600">🌽</span>}
-                    </div>
-                    <span className="ml-3 font-thin text-sm">{harvest.name}</span>
-                  </div>
-                  <span className="font-semibold text-sm">{harvest.amount}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    );
-  };
 
- const FieldCard = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedField, setSelectedField] = useState('corn');
 
-  const fieldData = {
-    corn: {
-      name: 'Corn Field',
-      image: '/strawberry-field.jpg',
-      cropHealth: 'Good',
-      plantingDate: '16 March, 2024',
-      harvestTime: '6 month',
-      bgColor: 'bg-green-50',
-      textColor: 'text-green-800'
-    },
-    wheat: {
-      name: 'Wheat Field',
-      image: '/strawberry-field.jpg',
-      cropHealth: 'Excellent',
-      plantingDate: '10 February, 2024',
-      harvestTime: '4 month',
-      bgColor: 'bg-amber-50',
-      textColor: 'text-amber-800'
-    },
-    potato: {
-      name: 'Potato Field',
-      image: '/strawberry-field.jpg',
-      cropHealth: 'Fair',
-      plantingDate: '20 March, 2024',
-      harvestTime: '3 month',
-      bgColor: 'bg-brown-50',
-      textColor: 'text-brown-800'
-    },
-    soybean: {
-      name: 'Soybean Field',
-      image: '/strawberry-field.jpg',
-      cropHealth: 'Good',
-      plantingDate: '1 April, 2024',
-      harvestTime: '5 month',
-      bgColor: 'bg-yellow-50',
-      textColor: 'text-yellow-800'
-    }
-  };
 
-  const currentField = fieldData[selectedField];
-
-  return (
-    <div className="w-full overflow-hidden rounded-lg bg-white shadow-md">
-      <div className="relative">
-        <img
-          src={currentField.image}
-          alt={`${currentField.name} at sunset`}
-          className="object-cover w-full h-48"
-        />
-        
-        {/* Dropdown Menu */}
-        <div className="absolute top-4 right-4">
-          <div className="relative">
-            <button
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              className="flex items-center px-4 py-2 bg-white rounded-lg shadow-md text-sm"
-            >
-              <span className="mr-2 text-sm font-thin">Switch Field</span>
-              <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isDropdownOpen ? 'transform rotate-180' : ''}`} />
-            </button>
-            
-            {isDropdownOpen && (
-              <div className="absolute right-0 w-48 mt-2 bg-white rounded-lg shadow-lg z-10">
-                {Object.entries(fieldData).map(([key, field]) => (
-                  <button
-                    key={key}
-                    onClick={() => {
-                      setSelectedField(key);
-                      setIsDropdownOpen(false);
-                    }}
-                    className={`w-full px-4 py-2 text-left hover:bg-gray-50 first:rounded-t-lg last:rounded-b-lg ${
-                      selectedField === key ? 'bg-gray-50' : ''
-                    }`}
-                  >
-                    {field.name}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* Field Information */}
-        <div className={`absolute bottom-0 left-0 right-0 p-4 bg-white bg-opacity-90`}>
-          <div className="flex items-center justify-between mb-2">
-            <div className="flex items-center">
-              <span className={`text-sm font-medium ${currentField.textColor}`}>
-                {currentField.name}
-              </span>
-            </div>
-            <button className="flex items-center text-gray-600 text-sm">
-              More Details
-              <ChevronRight className="w-4 h-4 ml-1" />
-            </button>
-          </div>
-
-          <div className="grid grid-cols-3 gap-4">
-            <div>
-              <p className="text-gray-500 text-sm">Crop Health</p>
-              <p className={`font-semibold ${currentField.textColor}`}>
-                {currentField.cropHealth}
-              </p>
-            </div>
-            <div>
-              <p className="text-gray-500 text-sm">Planting Date</p>
-              <p className="font-semibold">
-                {currentField.plantingDate}
-              </p>
-            </div>
-            <div>
-              <p className="text-gray-500 text-sm">Harvest Time</p>
-              <p className="font-semibold">
-                {currentField.harvestTime}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 export default Portfolio;
