@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { IoIosArrowForward } from "react-icons/io";
 import Homenav from '../app/components/homenavbar'
 import TextWithIcons from "./components/textWithIcon";
+import Account from "../app/components/selectaccount"
 export default function Home() {
   const features = [
     { text: 'You invest or rent a space using smart contracts from anywhere in the world', color: 'text-blue-500' },
@@ -54,9 +55,7 @@ export default function Home() {
           </p>
 
 
-          <a href="login" className="bg-main text-white px-8 font-thin py-3 rounded-full text-lg">
-            Get Started
-          </a>
+          <Account/> 
 
           <Image src="/headshot.png" width={160} height={100} alt="oxFramer" />
         </div>
@@ -220,7 +219,7 @@ export default function Home() {
 
             <h3 className="font-semibold- text-2xl font-normal">Eradicate Poverty through Agric</h3>
             <p className="w-72- text-lg font-thin tracking-wide text-gray-600">Save water and optimize growth with automated irrigation solutions. This helps in improving long-term profits and growth.</p>
-            <Link className="bg-main flex gap-4 items-center text-white px-6 py-3 font-thin rounded-full text-lg" href="#signup">Get Started<IoIosArrowForward /></Link>
+            <Account/> 
 
           </div>
 
@@ -240,7 +239,8 @@ export default function Home() {
 
             <h3 className="font-semibold- text-2xl font-normal">World Farming</h3>
             <p className="w-72- text-lg font-thin tracking-wide text-gray-600">Save water and optimize growth with automated irrigation solutions. This helps in improving long-term profits and growth.</p>
-            <Link className="bg-main flex gap-4 items-center text-white px-6 py-3 font-thin rounded-full text-lg" href="#signup">Get Started <IoIosArrowForward /></Link>
+            {/* <Link className="bg-main flex gap-4 items-center text-white px-6 py-3 font-thin rounded-full text-lg" href="#signup">Get Started <IoIosArrowForward /></Link> */}
+            <Account/> 
 
           </div>
 
@@ -277,7 +277,7 @@ export default function Home() {
             <p className="font-thin">For personal Use and exploration of <br /> AI technoloy </p>
             <p><a className="text-3xl" href="#">$99</a>/month</p>
 
-            <Link className="hover:bg-main border-[1px] border-main text-center px-8 py-2 rounded-full text-xs" href="#signup">Get Started</Link>
+            <Account/> 
 
             <div className="flex flex-col gap-4 font-thin text-xs">
               <p>Basic IOT Session</p>
@@ -296,7 +296,7 @@ export default function Home() {
             <p className="font-thin text-xs">For personal Use and exploration of <br /> AI technoloy </p>
             <p><a className="text-6xl" href="#">$299</a>/month</p>
 
-            <Link className="hover:bg-main border-[1px] border-main text-center px-8 py-2 rounded-full text-xs" href="#signup">Get Started</Link>
+            <Account/> 
 
             <div className="flex flex-col gap-4 text-xs font-light">
               <p>Basic IOT Session</p>
