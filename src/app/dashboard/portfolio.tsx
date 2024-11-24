@@ -184,18 +184,16 @@ export default function Portfolio() {
             </div>
 
             <div className="flex space-x-4-">
-                <div className="w-1/3 h-45 mx-auto  bg-white rounded-lg shadow-lg">
+                <div className="w-6/12 h-45 mx-auto  bg-white rounded-lg shadow-lg">
 
                     <p className="text-[#000] text-xs px-4 pt-4">Monthly Yield Analysis</p>
                     <ReactApexChart options={data.options} series={data.series} type="area" height={200} />
                 </div>
-                <div className="w-1/3 h-45- h-12 mx-auto  bg-white rounded-lg shadow-lg">
+                <div className="w-5/12 h-45- h-12 mx-auto  bg-white rounded-lg shadow-lg">
                     {/* img end */}
 
-                    {/* <div className="rounded-2xl"> */}
-                    <Image className="rounded-2xl" src="/strawberry-field.jpg" width={500} height={500} />
-                                        
-                    {/* </div> */}
+                    <Image src='/strawberry-field.jpg' className='rounded-2xl' width={500} height={500} />
+
 
                     {/* img end */}
                     <div className=" bottom-28 relative px-1">
